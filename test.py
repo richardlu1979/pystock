@@ -11,3 +11,6 @@ print hn
 
 a='test'
 print a
+
+b='test2'
+print b
