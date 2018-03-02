@@ -8,3 +8,6 @@ import tushare as ts
 hn=ts.get_k_data('002596',start='2018-02-26',end='2018-03-01')
 
 print hn
+
+a='test'
+print a
