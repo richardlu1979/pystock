@@ -8,7 +8,7 @@ import tushare as ts
 
 
 
-hn=ts.get_k_data('002596',start='2018-02-26',end='2018-03-01')
+hn=ts.get_k_data('002596',start='2018-03-26')
 
 print  (hn)
 
@@ -17,7 +17,9 @@ print ('=============')
 data = open('stocklist.txt')
 for each_line in data:
     (buytime,stockname) = each_line.split(' ',1)
-    print (buytime,end='')
-    print (' is ',end='')
-    print (stockname,end='')
+    #print (buytime,end='')
+    #print (' is ',end='')
+    #print (stockname,end='')
+
+
 
