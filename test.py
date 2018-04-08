@@ -1,25 +1,42 @@
 #coding:utf-8
 import tushare as ts
+import datetime
+
+hn=ts.get_k_data('300584',start='2018-04-03')
+
+#print (hn)
+#判断n天后是涨 y=1，是跌 y=0
+y=0
+n=1
+sbegin = hn.iloc[0].values[2]
+send = hn.iloc[n].values[2]
+
+if send>sbegin:
+    y=1
+
+#print(sbegin)
+#print(send)
+#print(y)
 
 
-#一段小脚本，把笔记里面记录的红电波推荐的票，计算下3，5，10日内的价格变动情况
-#example: 海南瑞泽  2018-02-26（推荐买入时间）
-
-
-
-
-hn=ts.get_k_data('002596',start='2018-03-26')
-
-print  (hn)
 
 print ('=============')
 
 data = open('stocklist.txt')
+ntotal = 0
+nrise =0 
 for each_line in data:
+    ntotal = ntotal +1
     (buytime,stockname) = each_line.split(' ',1)
-    #print (buytime,end='')
-    #print (' is ',end='')
-    #print (stockname,end='')
+    tmphn = ts.get_k_data(stockname.strip(),start=buytime.strip())
+    print(tmphn)
+    tmpbegin = tmphn.iloc[0].values[2]
+    tmpend = tmphn.iloc[1].values[2]
+    if tmpend>tmpbegin:
+        nrise = nrise +1
+    print(nrise)
+  
+print ('==home====')
+print (ntotal)
 
 
-print ('==home')
