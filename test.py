@@ -22,4 +22,4 @@ for each_line in data:
     #print (stockname,end='')
 
 
-
+print ('==home')
