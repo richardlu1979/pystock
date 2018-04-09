@@ -8,7 +8,7 @@ import os
     返回值：null
 '''
 def testts():
-    hn=ts.get_k_data('300584',start='2018-04-03')
+    hn=ts.get_k_data('300701',start='2018-04-01',end='2018-04-09')
     sbegin = hn.iloc[0].values[2]
     send = hn.iloc[1].values[2]
     print(sbegin)
@@ -37,14 +37,18 @@ def isrise(btime,sname,span):
 
 '''
     calrise: 计算指定股票sname在指定开始时间btime后span个工作日的涨跌比例
+    这里修改买入规则，第2天最低价格大于第1天收盘价，则买入失败，涨幅为0
     返回值：涨幅/跌幅，-1 异常
 '''
 def calrise(btime,sname,span):
     try:
         tmphn = ts.get_k_data(sname.strip(),start=btime.strip())
         tmpbegin = tmphn.iloc[0].values[2]
-        tmpend = tmphn.iloc[span].values[2]
-        ra = (tmpend-tmpbegin)*100/tmpbegin
+        if (tmphn.iloc[1].values[4]>tmpbegin):
+            ra =0
+        else:
+            tmpend = tmphn.iloc[span].values[2]
+            ra = (tmpend-tmpbegin)*100/tmpbegin
         print(ra)
         return ra
     except:
@@ -128,7 +132,7 @@ def calmutirate():
 if __name__ == '__main__':
     print ('main')
     #testts()
-    crise1 =  recalsingletime('stocklist.txt',1)
+    crise1 =  recalsingletime('stocklist.txt',3)
     print('=====total rise=====')
     print(crise1)
 
