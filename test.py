@@ -2,19 +2,81 @@
 import tushare as ts
 import datetime
 import os
+import time
 
 '''
     testts: 测试tushare
     返回值：null
 '''
 def testts():
-    hn=ts.get_k_data('300701',start='2018-04-01',end='2018-04-09')
+    hn=ts.get_k_data('300701',start='2018-04-01')
     sbegin = hn.iloc[0].values[2]
     send = hn.iloc[1].values[2]
     print(sbegin)
     print(send)
     print(hn)
-    
+    #测试获取股票实时报价
+    #df = ts.get_realtime_quotes('150174')  # Single stock symbol
+    #print(df[['code', 'name', 'price', 'bid', 'ask', 'volume', 'amount', 'time']])
+
+
+'''
+    watchstock: 监控实时的股票价格
+    返回值：null
+'''
+def watchstock():
+
+    stocklist = ['150174']
+    while 1:
+        try:
+            for stock in stocklist:
+                df = ts.get_realtime_quotes(stock)  # Single stock symbol
+                print(df[['name','price','time']])
+
+            time.sleep(120)
+        except:
+            pass
+
+
+'''
+    stockprofit: 根据stockname 股票的买入信号时间begintime，得到止盈价格:静态止盈，盈利30%，动态止盈，在当前时间中，最高的价格回落5%
+    返回值：止盈价格
+'''
+def stockprofit(stockname,begintime):
+    profitprice =float(0)
+    today = datetime.date.today()
+    oneday = datetime.timedelta(days=1)
+    yesterday = today - oneday
+
+    yday = yesterday.strftime("%Y-%m-%d")
+    print(yday)
+    print(begintime)
+    try:
+        hn = ts.get_k_data(stockname, start=begintime, end=yday)
+        print(hn)
+        send = hn.iloc[1].values[2]
+        shigh=max(hn.iloc[:,2].values) #取收盘价格最高值
+
+        profitprice = max(send *1.3,shigh*0.95)
+    except:
+        pass
+    return profitprice
+
+
+'''
+    stockloss: 根据stockname 股票的买入信号时间begintime，得到止损价格：买入时间收盘价格跌7%
+    返回值：止损价格
+'''
+def stockloss(stockname,begintime):
+    lossprice =float(0)
+    try:
+        hn = ts.get_k_data(stockname, start=begintime)
+        lossprice = hn.iloc[0].values[2]*0.93
+    except:
+        pass
+    return lossprice
+
+
 
 
 '''
@@ -122,19 +184,31 @@ def calmutirate():
     rate10 = calrate('stocklist.txt',10)
     print(rate10)
 
-
-
-
 '''
     主函数
 '''
 
+def main():
+    print ('main')
+    watchstock()
+    #testts()
+    #pv=stockprofit('300404','2018-04-16')
+    #print(pv)
+    #crise1 =  recalsingletime('stocklist.txt',3)
+    #print('=====total rise=====')
+    #print(crise1)
+
+
+
+
+
+'''
+    主入口
+'''
+
 if __name__ == '__main__':
     print ('main')
-    #testts()
-    crise1 =  recalsingletime('stocklist.txt',3)
-    print('=====total rise=====')
-    print(crise1)
+    main()
 
 
 
