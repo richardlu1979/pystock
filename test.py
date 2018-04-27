@@ -3,6 +3,7 @@ import tushare as ts
 import datetime
 import os
 import time
+import sqlite3
 
 '''
     testts: 测试tushare
@@ -85,15 +86,38 @@ def stockloss(stockname,begintime):
 '''
 def isrise(btime,sname,span):
     try:
+        print('isrise')
         tmphn = ts.get_k_data(sname.strip(),start=btime.strip())
-        tmpbegin = tmphn.iloc[0].values[2]
+        #tmpbegin = tmphn.iloc[0].values[2]
+        tmpbegin = tmphn.iloc[1].value[1]  # 修改下以第2天的开盘价格更真实
+        print(tmpbegin)
         tmpend = tmphn.iloc[span].values[2]
+        print(tmpend)
         if tmpend > tmpbegin:
             return 1
         else:
             return 0
     except:
         return -1
+
+
+'''
+    stocktradeinfo: 打印指定股票sname在指定开始时间btime后span个工作日里的信息
+    返回值：0正常，-1 异常
+'''
+def stocktradeinfo(btime,sname,span):
+    try:
+        tmphn = ts.get_k_data(sname.strip(),start=btime.strip())
+        t1 = tmphn.iloc[0].values[2] # 买入信号当天的收盘价格
+        t2 = tmphn.iloc[1].values[1] # 买入信号第2天的开盘价格
+        tn = tmphn.iloc[1].values[2] # 买入span天后的收盘价格
+        print('股票名：',sname,' 买入时间：',btime,' 买入当天收盘: ',t1,' 买入第2天开盘: ',t2,' 买入第',span,'天收盘: ',tn)
+        return 0
+    except:
+        return -1
+
+
+
 
 
 
@@ -153,17 +177,51 @@ def calrate(sfile,num):
             ntotal = ntotal +1
             (buytime,stockname) = each_line.split(' ',1)
             k= isrise(buytime,stockname,num)
-            if k<0:
-                ntotal = ntotal -1
-            else:
-                nrise = nrise +k
+            if k>1:
+                nrise = nrise+1
+
     except:
         return 0
     
-    print (ntotal)
-    print(nrise)
-    return 100*nrise/ntotal
-    
+    print ('全部信号： ',ntotal)
+    print('有效上涨信号: ', nrise)
+    #return 100*nrise/ntotal
+    return 0
+
+
+'''
+    stbinsert: 打开指定股票列表文件sfile, 将股票编号，和买入时间点插入
+    返回值： 0正常，1异常
+'''
+
+
+def stbinsert(sfile):
+    try:
+        print('insert')
+        data = open(sfile)
+        conn = sqlite3.connect('test.db')
+        print("Open database successfully")
+        c = conn.cursor()
+        for each_line in data:
+            (buytime, stockname) = each_line.split(' ', 1)
+            tmphn = ts.get_k_data(stockname.strip(), start=buytime.strip())
+            beginprice = tmphn.iloc[0].values[2]
+            buyprice = tmphn.iloc[1].values[1]
+            twop = tmphn.iloc[2].values[2]
+            threep=tmphn.iloc[3].values[2]
+            fivep=tmphn.iloc[5].values[2]
+            tenp=tmphn.iloc[10].values[2]
+            c.execute("insert into tbstock (begintime,scode,beginprice,buyprice,twop,threep,fivep,tenp) values (?,?,?,?,?,?,?,?)",(buytime.strip(),stockname.strip(),beginprice,buyprice,twop,threep,fivep,tenp))
+        conn.commit()
+        conn.close()
+
+
+    except:
+        print('error')
+        return 1
+
+
+
 '''
     calmutirate:计算1，2，3，4，5，6，10天对应的胜率
     返回值：无
@@ -184,15 +242,23 @@ def calmutirate():
     rate10 = calrate('stocklist.txt',10)
     print(rate10)
 
+
+
+
 '''
     主函数
 '''
 
 def main():
     print ('main')
-    watchstock()
+    stbinsert('stocklist.txt')
+    #calmutirate()
+    #isrise('2018-04-03','300584',5)
+    #calrate('stocklist.txt', 3)
+    #watchstock()
     #testts()
     #pv=stockprofit('300404','2018-04-16')
+    #m= stocktradeinfo('2018-04-16','300404',5)
     #print(pv)
     #crise1 =  recalsingletime('stocklist.txt',3)
     #print('=====total rise=====')
@@ -207,7 +273,6 @@ def main():
 '''
 
 if __name__ == '__main__':
-    print ('main')
     main()
 
 
