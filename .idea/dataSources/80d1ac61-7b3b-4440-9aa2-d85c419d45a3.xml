@@ -12,42 +12,95 @@
     <table id="6" parent="2" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="7" parent="2" name="user"/>
-    <column id="8" parent="6" name="type">
+    <table id="7" parent="2" name="tbstock"/>
+    <table id="8" parent="2" name="user"/>
+    <column id="9" parent="6" name="type">
       <Position>1</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="9" parent="6" name="name">
+    <column id="10" parent="6" name="name">
       <Position>2</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="10" parent="6" name="tbl_name">
+    <column id="11" parent="6" name="tbl_name">
       <Position>3</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="11" parent="6" name="rootpage">
+    <column id="12" parent="6" name="rootpage">
       <Position>4</Position>
       <DataType>integer|0</DataType>
     </column>
-    <column id="12" parent="6" name="sql">
+    <column id="13" parent="6" name="sql">
       <Position>5</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="13" parent="7" name="id">
+    <column id="14" parent="7" name="sname">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="15" parent="7" name="scode">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="7" name="begintime">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="7" name="beginprice">
+      <Position>4</Position>
+      <DataType>real|0</DataType>
+    </column>
+    <column id="18" parent="7" name="buyprice">
+      <Position>5</Position>
+      <DataType>real|0</DataType>
+    </column>
+    <column id="19" parent="7" name="twop">
+      <Position>6</Position>
+      <DataType>real|0</DataType>
+    </column>
+    <column id="20" parent="7" name="threep">
+      <Position>7</Position>
+      <DataType>real|0</DataType>
+    </column>
+    <column id="21" parent="7" name="fivep">
+      <Position>8</Position>
+      <DataType>real|0</DataType>
+    </column>
+    <column id="22" parent="7" name="tenp">
+      <Position>9</Position>
+      <DataType>real|0</DataType>
+    </column>
+    <index id="23" parent="7" name="sqlite_autoindex_tbstock_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>scode
+begintime</ColNames>
+      <ColumnCollations>
+</ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="24" parent="7">
+      <ColNames>scode
+begintime</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_tbstock_1</UnderlyingIndexName>
+    </key>
+    <column id="25" parent="8" name="id">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="14" parent="7" name="name">
+    <column id="26" parent="8" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <index id="15" parent="7" name="sqlite_autoindex_user_1">
+    <index id="27" parent="8" name="sqlite_autoindex_user_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="16" parent="7">
+    <key id="28" parent="8">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_user_1</UnderlyingIndexName>

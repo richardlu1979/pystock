@@ -1,4 +1,5 @@
 #coding:utf-8
+
 import tushare as ts
 import datetime
 import os
@@ -34,7 +35,7 @@ def watchstock():
                 df = ts.get_realtime_quotes(stock)  # Single stock symbol
                 print(df[['name','price','time']])
 
-            time.sleep(120)
+            time.sleep(1200)
         except:
             pass
 
@@ -202,23 +203,32 @@ def stbinsert(sfile):
         conn = sqlite3.connect('test.db')
         print("Open database successfully")
         c = conn.cursor()
+        ncount=0
+        hs=ts.get_stock_basics()
         for each_line in data:
             (buytime, stockname) = each_line.split(' ', 1)
             tmphn = ts.get_k_data(stockname.strip(), start=buytime.strip())
-            beginprice = tmphn.iloc[0].values[2]
-            buyprice = tmphn.iloc[1].values[1]
-            twop = tmphn.iloc[2].values[2]
-            threep=tmphn.iloc[3].values[2]
-            fivep=tmphn.iloc[5].values[2]
-            tenp=tmphn.iloc[10].values[2]
-            c.execute("insert into tbstock (begintime,scode,beginprice,buyprice,twop,threep,fivep,tenp) values (?,?,?,?,?,?,?,?)",(buytime.strip(),stockname.strip(),beginprice,buyprice,twop,threep,fivep,tenp))
+            nsize = tmphn.iloc[:, 0].size
+            sname = hs.loc[stockname.strip()].values[0]
+            if nsize >10:
+                beginprice = tmphn.iloc[0].values[2]
+                buyprice = tmphn.iloc[1].values[1]
+                twop = tmphn.iloc[2].values[2]
+                threep=tmphn.iloc[3].values[2]
+                fivep = tmphn.iloc[5].values[2]
+                tenp = tmphn.iloc[10].values[2]
+                c.execute("insert into tbstock (sname,begintime,scode,beginprice,buyprice,twop,threep,fivep,tenp) values (?,?,?,?,?,?,?,?,?)",(sname,buytime.strip(),stockname.strip(),beginprice,buyprice,twop,threep,fivep,tenp))
+            else:
+                print(stockname,buytime,'no 3 days')
+            print(ncount)
+            ncount = ncount+1
         conn.commit()
         conn.close()
 
 
     except:
         print('error')
-        return 1
+        pass
 
 
 
@@ -243,6 +253,58 @@ def calmutirate():
     print(rate10)
 
 
+'''
+    stbupdate: 查出所有buyprice,twop,threep,fivep,tenp为空的记录，进行相应的update动作
+    返回值： 0正常，1异常
+'''
+
+
+def stbupdate(sfile):
+    try:
+        print('update')
+        data = open(sfile)
+        conn = sqlite3.connect('test.db')
+        print("Open database successfully")
+        c = conn.cursor()
+        ncount=0
+        hs=ts.get_stock_basics()
+        for each_line in data:
+            (buytime, stockname) = each_line.split(' ', 1)
+            tmphn = ts.get_k_data(stockname.strip(), start=buytime.strip())
+            nsize = tmphn.iloc[:, 0].size
+            sname = hs.loc[stockname.strip()].values[0]
+
+            #1)判断buytime_stockname是否存在
+
+
+
+            #2)如果存在
+
+
+            if nsize >10:
+                beginprice = tmphn.iloc[0].values[2]
+                buyprice = tmphn.iloc[1].values[1]
+                twop = tmphn.iloc[2].values[2]
+                threep=tmphn.iloc[3].values[2]
+                fivep = tmphn.iloc[5].values[2]
+                tenp = tmphn.iloc[10].values[2]
+                c.execute("insert into tbstock (sname,begintime,scode,beginprice,buyprice,twop,threep,fivep,tenp) values (?,?,?,?,?,?,?,?,?)",(sname,buytime.strip(),stockname.strip(),beginprice,buyprice,twop,threep,fivep,tenp))
+            else:
+                print(stockname,buytime,'no 3 days')
+
+
+            print(ncount)
+            ncount = ncount+1
+        conn.commit()
+        conn.close()
+
+
+    except:
+        print('error')
+        pass
+
+
+
 
 
 '''
@@ -251,11 +313,11 @@ def calmutirate():
 
 def main():
     print ('main')
-    stbinsert('stocklist.txt')
+    #stbinsert('stocklist.txt')
     #calmutirate()
     #isrise('2018-04-03','300584',5)
     #calrate('stocklist.txt', 3)
-    #watchstock()
+    watchstock()
     #testts()
     #pv=stockprofit('300404','2018-04-16')
     #m= stocktradeinfo('2018-04-16','300404',5)
