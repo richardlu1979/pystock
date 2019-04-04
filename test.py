@@ -1,5 +1,6 @@
 #coding:utf-8
 
+
 import tushare as ts
 import datetime
 import os
@@ -253,48 +254,33 @@ def calmutirate():
     print(rate10)
 
 
+
+
+
 '''
     stbupdate: 查出所有buyprice,twop,threep,fivep,tenp为空的记录，进行相应的update动作
+               stype : 1 更新 buyprice,3 更新threep,2更新 twop,5 更新fivep,10更新 tenp
     返回值： 0正常，1异常
 '''
 
 
-def stbupdate(sfile):
+def stbupdate(stype):
     try:
-        print('update')
-        data = open(sfile)
         conn = sqlite3.connect('test.db')
         print("Open database successfully")
         c = conn.cursor()
-        ncount=0
-        hs=ts.get_stock_basics()
-        for each_line in data:
-            (buytime, stockname) = each_line.split(' ', 1)
-            tmphn = ts.get_k_data(stockname.strip(), start=buytime.strip())
+        c.execute('select * from tbstock where buyprice is null ')
+        vs = c.fetchall()
+        for row in vs:
+            buytime = row[2]
+            scode = row[1]
+            tmphn = ts.get_k_data(scode.strip(), start=buytime.strip())
             nsize = tmphn.iloc[:, 0].size
-            sname = hs.loc[stockname.strip()].values[0]
-
-            #1)判断buytime_stockname是否存在
-
-
-
-            #2)如果存在
-
-
-            if nsize >10:
-                beginprice = tmphn.iloc[0].values[2]
+            if nsize > 0:
                 buyprice = tmphn.iloc[1].values[1]
-                twop = tmphn.iloc[2].values[2]
-                threep=tmphn.iloc[3].values[2]
-                fivep = tmphn.iloc[5].values[2]
-                tenp = tmphn.iloc[10].values[2]
-                c.execute("insert into tbstock (sname,begintime,scode,beginprice,buyprice,twop,threep,fivep,tenp) values (?,?,?,?,?,?,?,?,?)",(sname,buytime.strip(),stockname.strip(),beginprice,buyprice,twop,threep,fivep,tenp))
-            else:
-                print(stockname,buytime,'no 3 days')
+                c.execute("update  tbstock set buyprice= ? where scode =? ",(buyprice, scode))
 
-
-            print(ncount)
-            ncount = ncount+1
+        c.close()
         conn.commit()
         conn.close()
 
@@ -313,6 +299,7 @@ def stbupdate(sfile):
 
 def main():
     print ('main')
+    #stbupdate(1)
     #stbinsert('stocklist.txt')
     #calmutirate()
     #isrise('2018-04-03','300584',5)

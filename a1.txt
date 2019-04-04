@@ -1,0 +1,2415 @@
+特殊陈列拍照,Special display and photo
+拍照设置,Photo setting
+拍照,Photograph
+生日,Birthday
+计划时间,Planned time
+看板人员情况明细,The situation of the Kanban personnel
+自定义控件,Custom control
+考勤日历详情,Details of the attendance calendar
+是否售卖,Sell or not
+新品,New product
+最近拜访历史,A recent visit to history
+考勤可选拍照,Take photos at the attendance
+修改人,Modifier
+客户级别,Customer level
+查询-所属KA,Query - KA
+班次管理,Class management
+邮箱,mailbox
+成员名称,Member name
+查询-经营品牌,Query - business brand
+导出,export
+传真,Fax
+新品有效期,Validity of new products
+查询-终端名称,Query - terminal name
+单品条码,Single bar code
+性别,Sex
+产品编码,Product coding
+兼职岗位,Part-time job
+附件,Enclosure
+单品规格,Single product specification
+产品名称,Product name
+新控件测试,New control test
+终端级别,Terminal level
+报表终端详情页,Report terminal details page
+品项检查,Item examination
+广宣物料使用是否达标,Whether the widely used material is used to meet the standard
+客户拜访,Customer visit
+请选择营销组织,Please choose marketing organization
+查询-渠道类型,Query channel type
+已选岗位（主岗位）,Selected post (main post)
+查询-考勤组名称,Query - attendance group name
+下属,subordinate
+其他信息,Other information
+客户名称,Customer name
+请选择状态,Please select the state
+请假人,Ask the dummy
+终端管理,Terminal management
+很差,Very poor
+工作日历id,Work calendar ID
+总金额,Total amount
+导入,Import
+客户地址,Customer address
+待选岗位,Post selection
+品类,category
+家庭地址,Home address
+提交,Submission
+终端生动化检查,Terminal vividness examination
+特殊陈列,Special display
+终端离店签退,Terminal check-out
+列表行定义,List row definition
+考勤组管理成员,Attendance group management members
+保存,Preservation
+文字,Written words
+所属供货商,Supplier
+临期商品数量,Quantity of goods at the present time
+线外拜访,Out of line visit
+下属拜访情况,Subordinates' visit
+经营品类id,Business category ID
+控件标题,Control title
+联系人姓名,Contact name
+人员明细,Personnel detail
+隐藏域,Hidden domain
+状态,state
+终端简称,Terminal abbreviation
+新负责人,New person in charge
+是,yes
+单品单位,Single unit
+保留,Retain
+关联状态,Association state
+门店名称,Store name
+事项处理,Processing of matters
+年月,Years
+app报表,App Report
+很好,very good
+已关联,Association
+人员数量,Number of personnel
+可以信息页面,Information page
+岗位,post
+时间段值,Time value
+签到时间,Sign in time
+业务代表,Business representative
+堆箱陈列评价,Evaluation of stack box display
+帐号关联状态,Account association state
+销量,Sales volume
+序号,Serial number
+订单日期,Order date
+业务代表id,Business representative ID
+客户管理,customer management
+拜访类型,Type of visit
+产品包装,Product packaging
+固定电话,Fixed telephone
+查询-状态,Query - state
+所属ka,Ka
+是否缺货锁码,Whether or not the shortage lock code
+日历,calendar
+产品管理页面,Product management page
+渠道客户管理详情,Details of channel customer management
+分销规格,Distribution specification
+考勤必须拍照,Attendance must be photographed
+营销区域,Marketing area
+渠道客户拜访,Channel customer visit
+看板控件,Kanban control
+手机号码,Phone number
+评价,evaluate
+身份证号,ID number
+趋势,trend
+是否周期拜访,A periodic visit
+便捷计划制定,Convenient plan formulation
+移除,remove
+分销单位,Distribution unit
+详细地址,Detailed address
+终端级别名称,Terminal level name
+请假单Form,Form
+部分盘点提交,Submission of part inventory
+人员列表页面,Staff list page
+组织岗位名称,Organization post name
+报表业代终端情况,Report industry generation terminal
+终端详情,Terminal details
+品项与协议是否一致,Whether the item and the agreement are consistent
+岗位名称,Post name
+客户ID,Customer ID
+客户转移,Customer transfer
+拜访管理,Visit management
+渠道客户管理变更负责人,Manager of channel customer management change
+货架陈列评价,Evaluation of shelf display
+考勤记录控件,Attendance record control
+价格,Price
+销量情况,Sales volume
+按钮,Button
+经度,longitude
+名称,Name
+主岗位,Main post
+主要岗位,Main post
+渠道类型,Channel type
+今日,today
+微信号,Wechat number
+销售组织,Sales organization
+产品品牌,Product brand
+成员ID,Member ID
+考勤日历,Attendance calendar
+行政区域,Administrative division
+考勤日历控件,Attendance calendar control
+产品编号,Product number
+报表时间区域折线图,Time area folding chart of report
+联系电话,Contact number
+报表主管终端详情,Report manager terminal details
+请假单列表,List of leave
+帐号编码,Account code
+主管人员详情,Details of the supervisor
+营销组织名称,Name of marketing organization
+查询-所属供货商,Inquiries - Suppliers
+请输入日历名称,Please enter the calendar name
+重点,A key
+明细,Detailed
+拜访内容,Visiting content
+人员姓名,Name of personnel
+已拜访数量,Number of visits
+价格是否异常,Whether the price is abnormal or not
+查询栏,Query bar
+终端类型,Terminal type
+营销区域名称,Marketing area name
+选择状态,Selected state
+一般,commonly
+KA系统名称,KA system name
+终端类型名称,Terminal type name
+产品图片,Product picture
+单位转换率,Unit conversion rate
+联系人手机号,Contact cell phone number
+成员,member
+否,no
+最近拜访记录,Recent visit
+手机端表格报表,Mobile phone end table Report
+营销区域ID,Marketing area ID
+启用,Enable
+所属营销组织,Affiliated marketing organization
+排序规则,Sort rule
+新渠道客户库存盘点,New channel customer inventory inventory
+终端ID,Terminal ID
+斜杠,Slash
+客户id,Customer ID
+正常陈列,Normal display
+箱,box
+渠道客户,Channel customers
+客户类型值,Customer type value
+请假类型,Type of ask for leave
+追加,Append
+是否默认班次,The default flight
+计划客户数,Planned customer number
+个人信息,Personal information
+新增渠道客户,New channel customers
+转换营销组织,Transformation marketing organization
+已拜访客户数,Number of customers visited
+移除客户,Remove customers
+报表,Report form
+单价最大值,Maximum unit price
+上月,Last month
+渠道销量情况,Channel sales
+考勤时间,Attendance time
+开始合作时间,Start the cooperation time
+查询-终端类型,Query terminal type
+排面情况,Layout
+字典值,Dictionary value
+单价最小值,Minimum unit price
+库存数量,Inventory quantity
+渠道客户名称,Channel customer name
+人员情况汇总,Summary of personnel
+成员id,Member ID
+经营品类,Business category
+条码扫描,barcode scanner
+请输入KA系统名称,Please enter the KA system name
+是否拜访,Do you visit
+面积与协议是否一致,Is the area consistent with the agreement
+表格列表,Table list
+异常情况,Abnormal condition
+纬度,latitude
+最近拜访记录,Recent visit
+渠道客户id,Channel customer ID
+手机端报表表单,Phone end report form
+今日任务,Today's task
+客户类型,Customer type
+新增,Newly added
+客户列表分配,Customer list allocation
+考勤记录,Attendance Record
+姓名,Full name
+品牌,brand
+店面工作,Storefront work
+拜访时间,Visit time
+导入导出测试,Import and export test
+手机端水平报表,Mobile phone end level report
+工作目标,Work goal
+创建人,Founder
+停用,Discontinuation
+库存,Stock
+照片,Photo
+新增终端客户,New terminal customers
+申请时间,Application time
+加入计划,Join the plan
+新增客户,New customers
+终端管理变更负责人,Terminal management change manager
+拜访完成率,Visit completion rate
+建议零售价,Suggested retail price
+客户明细,Customer detail
+班次名称,Class name
+查询-终端级别,Query terminal level
+地址,address
+台,platform
+门店详情,Store details
+入职日期,Date of entry
+渠道客户编号,Channel customer number
+出勤总人数,Total attendance
+行政区域名称,Administrative region name
+业务经理,Service Manager
+不限,Unlimited
+拜访日期,Date of visit
+导航管理,Navigation management
+删除,delete
+排面数量,Number of rows
+QQ,QQ
+申请日期,Application date
+月,month
+是否重点终端,Key terminal
+应出勤工时,Work hours
+请假时长,Long time for leave
+考勤状态,Attendance status
+考勤组管理,Attendance management
+新成交客户,New transaction customer
+KA系统类型,KA system type
+终端/渠道客户类型,Terminal / channel customer type
+联系人手机号码,Contact cell phone number
+库存(箱),Inventory (box)
+全部覆盖,Full coverage
+短号,Short trumpet
+本月订货箱数,The number of order boxes in this month
+定位地址,Location address
+不合格,Unqualified
+下单门店,A single store
+KA系统编号,KA system number
+成员姓名,Name of a member
+终端进店签到,Terminal check-in
+定位异常拍照,Localize abnormal photo
+渠道客户库存盘点,Channel customer inventory inventory
+全部盘点提交,Full inventory submission
+定位误差,positioning error
+定位经纬度,Location of longitude and latitude
+生成帐号,Generating account number
+标箱系数,The coefficient of the box
+报表时间区间,Report time interval
+查询-渠道客户名称和负责人,Query - channel customer name and person in charge
+经营品牌,Business brand
+女,female
+男,male
+直属上级,Directly subordinate to the superior
+重点产品,Key products
+排名,ranking
+保质时长,Long term of quality
+未关联,Unrelated
+终端客户,Terminal customer
+较好,preferably
+营销组织,Marketing organization
+终端编码,Terminal coding
+报表主管员工情况,Report manager's situation
+终端名称,Terminal name
+基本信息,Essential information
+计划日期,Planned date
+表格测试,Table test
+正常陈列拍照,Normal display and photo
+工号,Work number
+终端检查,Terminal inspection
+盘点单类型,Inventory type
+开始拜访,Start visiting
+品相变化,Phase change
+考勤组管理详情,Attendance unit management details
+经营品牌id,Business brand ID
+记录日期,Record date
+查询-行政区域,Query Administrative Region
+人员管理,Personnel management
+办公电话,Office phone
+客情整体情况,Overall situation of the guest situation
+附加信息,Additional information
+列表,list
+审批状态,State of approval
+查询-营销组织,Query marketing organization
+头像,Head portrait
+拜访状态,State of visit
+年,year
+表格列表行定义,Table list row definition
+产品简称,Product abbreviations
+联系人职位,Contact Title
+设置信息,set information
+瓶,bottle
+合格,qualified
+本月,This month
+日历名称,Calendar name
+渠道客户编码,Channel customer coding
+查询-渠道客户类型,Query - channel customer type
+负责人,Person in charge
+客户类别,Customer category
+简单计划制定,Simple plan formulation
+班次管理,Class management
+手机端多个报表,Multiple reports on the mobile phone
+手机号,Cell-phone number
+打卡类型,Type of punch card
+是否重点产品,Key products
+开始时间,start time
+客户类别，不显示的,Customer category, not displayed
+原有岗位如何处理,How to deal with the original post
+所有客户,All customers
+正常陈列位置是否达标,Whether the normal display position is up to the standard
+未拜访,Not visiting
+供货商id,Supplier ID
+KA系统管理详情,KA system management details
+位置与协议是否一致,Is the position consistent with the agreement
+POP广告,POP advertising
+移动端请假单,Mobile end please
+渠道拜访签退,Channel visit and sign back
+请假类型查询条件,Asking for false type query conditions
+客户负责人,Customer Manager
+正常陈列比例是否达标,Whether the normal display ratio is up to the standard
+人员数据,Personnel data
+联系人电话,Contact phone
+打卡时间,Punch time
+堆箱陈列,Box display
+人员详情管理,Personnel details management
+渠道进店签到,Enter the shop to sign in
+报表主管拜访详情页,Report supervisor visit details page
+人员id,Personnel ID
+盘点日期,Date of inventory
+供货方式,Supply mode
+综合情况,Comprehensive situation
+采集明细,Collection of details
+POP广告评价,POP advertising evaluation
+包,package
+成员岗位,Member positions
+今年休息日（天）,This year's rest day (day)
+修改,modify
+班次管理控件,Control control of class
+必铺品项是否遗漏,Whether the paving items are missing
+创建时间,Creation time
+手机端报表下拉筛选,Mobile phone end report drop-down screening
+终端销量情况,Terminal sales
+汇总,Summary
+已拜访,Have a visit
+只显示已修改数据,Only display modified data
+是否重点门店,Whether or not the key store
+最近拜访时间,Recent visit time
+渠道客户管理,Channel customer management
+正常陈列高度是否达标,Whether the normal display height is up to the standard
+查询-终端编码,Query terminal coding
+考勤组类型,Type of attendance group
+日期,date
+考勤组名称,Name of the attendance group
+查询-渠道客户编号,Query - channel customer number
+请选择行政区域,Please choose the administrative area
+全部,whole
+上级客户,parent customer
+正常数量,Normal quantity
+客户编码,Customer code
+广告拍照情况,Advertising photos
+分销条码,Distribution bar code
+人员,personnel
+班次管理详情,Details of class management
+手机端时间区间报表,Mobile phone end time interval Report
+结束时间,End time
+今年工作日（天）,Working day of this year (day)
+请输入KA系统编号,Please enter the KA system number
+备注,Remarks
+品项情况,Item situation
+箱重,Box weight
+产品单价,Product unit price
+请选择数据重复的处理方式,Please select the process of data duplication
+渠道客户类型,Channel customer type
+保存后生成帐号,Generate account number after saving
+修改时间,Modification time
+客户详情,Customer details
+未拜访数量,Unvisited number
+终端客户管理,End customer management
+员工考勤明细,Staff attendance
+关闭,Close
+终端店面工作,Terminal shop
+新开客户,New customers
+单位,Company
+终端管理详情,Terminal management details
+是否默认工作日历,Do you default the work calendar
+班次,Shift
+人员汇总,Personnel summary
+KA系统管理,KA system management
+货架陈列,Shelf Display
+出勤人数,Attendance
+我的,My
+产品品类,Product category
+较差,Poor
+所属KA,KA
+请选择客户类型,Please select the type of customer
+签离时间,Sign off time
+请填写客户名称,Please fill in the name of the customer
+提交人手机号,Mobile phone number of the author
+签到拍照,Sign in and take a picture
+拜访小结,Visit a brief summary
+签到地址,Sign to address
+请选择开始时间,Please choose the start time
+提交人,submitter
+请填写提交人,Please fill in the author
+渠道客户进离,Channel customer advance
+请选择结束时间,Please choose the end time
+区域,region
+请选择营销区域,Please choose the marketing area
+在店时长,Long at the store
+签离地址,Sign off address
+请假单列表,List of leave
+今日拜访,Visit today
+报表统计,Report statistics
+终端列表,Terminal list
+测试两行报表,Test two line reports
+我的手机订单成功了,My mobile phone order has been successful
+成功列表,Success list
+app编辑,App editor
+保存成功,Save success
+终端,terminal
+终端列表,Terminal list
+测试环境,testing environment
+开发环境,development environment
+生产环境,production environment
+登录,Sign in
+选择岗位,Choice of Posts
+业务员,Salesman
+渠道业务员,Channel salesman
+确定,Determine
+取消,cancel
+工作,work
+消息,news
+发送队列,Send queue
+退出登录,Exit logon
+设置语言,Setting language
+上传图片,Upload a picture
+提交人手机号码,Mobile phone number of the author
+拜访采集,Visit and collect
+终端进离,Terminal advance
+生动化检查,Vividness examination
+选择日期,Selection date
+考勤明细,Attendance
+请选择区域,Please select the area
+定位,Location
+提交时间,Time of submission
+请选择终端级别,Please select terminal level
+请选择终端类型,Please select terminal type
+请填写终端名称,Please fill in the name of the terminal
+货架陈列评分,Shelf display score
+堆箱陈列评分,Box display score
+请选择所属KA,Please select the KA
+POP广告评分,POP advertising score
+产品序号,serial number
+产品详情管理,Product details management
+请选择月份,Please choose month
+上级姓名,Superiors' name
+排序值,Sort value
+请选择结束日期,Please choose the end date
+请填写姓名,Please fill in the name
+请选择开始日期,Please choose the start date
+失效申请,Failure application
+请选择渠道类型,Please select the channel type
+联系人,Contacts
+KA名称,KA name
+业务经理id,Business manager ID
+查询-业务代表,Query - Business Representative
+数字输入,Digital input
+考勤管理,Attendance management
+考勤控件,Attendance control
+渠道类型id,Channel type ID
+客户列表排序测试app,Customer list sorting test app
+终端分布图,Terminal distribution diagram
+店面工作_动态加载,Storefront work dynamic loading
+今年休息日,This year's rest day
+今年工作日,Working day this year
+今年工作日(天),Working day of this year (day)
+今年休息日(天),This year's rest day (day)
+日历id,Calendar ID
+是否工作日,Work day
+启用状态,Enabled state
+系统配置,system configuration
+待办事项,Backlog
+帐号管理,Account Management
+数据字典,data dictionary
+权限组管理,Authority group management
+职位管理,Job management
+组织管理,Organization and management
+测试菜单控制,Test menu control
+迟到阀值,Late threshold
+是否默认时间段,Whether or not the default time period
+签退时间,Sign back time
+跨天标志,Cross Day sign
+最早打卡时间,The earliest card time
+不计工时起始时间,Not counting the starting time of the working hour
+不计工时结束时间,Not counting the end of the time of work
+出勤工时,Work hours
+数据规则,Data rules
+看板人员情况汇总,Summary of Kanban personnel
+渠道客户最近拜访记录,Channel customers' recent visit records
+表单加载行为,Form loading behavior
+家庭住址,Home address
+出生日期,Date of birth
+拼音,Pinyin
+考勤定位,Attendance position
+拜访计划详情,Visit the details of the plan
+临期数量,Amount of time
+渠道销量临时摆放,Temporary sales of channel sales
+全部客户,All customers
+成员编号,Member number
+数据字典绑定,Data dictionary binding
+报表人员考勤明细,Report staff attendance
+状况,status
+上班时间,Work shift
+下班时间,Closing time
+考勤汇总,Attendance summary
+客户类别名称,Customer category name
+业代客户情况,Industry generation customer situation
+新增日期,New date
+2000米,2000 meters
+1500米,1500 meters
+500米,500 meters
+1000米,1000 meters
+业代拜访情况,Business visit
+主管拜访详情,Supervisor to visit details
+主管人员考勤,Supervisor's attendance
+客户名,Customer name
+test_主管终端详情,Test_ supervisor terminal details
+占位控件,Occupancy control
+终端ID存储,Terminal ID storage
+主管终端详情,Terminal details
+业代拜访明细页签,Business visit
+拜访次数,Number of visits
+业代拜访汇总页签,Karma
+成交次数,Number of transactions
+业代拜访执行表单流,Industry call to execute form flow
+年份,Particular year
+三月指标值,March index value
+十二月指标值,December index value
+四月指标值,April index value
+六月指标值,June index value
+对象姓名,Object name
+一月指标值,One month index value
+五月指标值,May index value
+对象名,Object name
+九月指标值,September index value
+清除,Eliminate
+二月指标值,February index value
+八月指标值,August index value
+十一月指标值,November index value
+年度,year
+十月指标值,October index value
+人员KPI设置,Staff KPI settings
+七月指标值,July index value
+拜访执行明细,Visit the execution details
+拜访执行明细汇总,Visit the execution of details
+KPI指标项,KPI index term
+客户编号,Customer number
+组织机构名称,Organization name
+本周,This week
+检查时间,Check time
+广告情况拍照,Picture of advertising
+终端客户分析,End customer analysis
+首页,home page
+首页拜访情况(放大),Home visit (enlargement)
+首页客户分析(放大),Home page customer analysis (enlargement)
+查询-结束时间,Query - end time
+查询-开始时间,Query start time
+查询-成员姓名,Query - member name
+业代拜访执行汇总,Executive summary
+业代拜访执行明细,Business visit
+编号按钮,Numbered button
+人员编辑test,Staff editor test
+渠道库存,Channel stock
+查询-提交人,Inquire - submitting
+产品铺货,Product pavement
+是否分销,Whether or not to distribute
+查询-营销区域,Query - marketing area
+关联岗位,Related posts
+请选择,Please choose
+昨日,yesterday
+上周,Last week
+查询-客户名称,Query - customer name
+查询-客户类型,Query - customer type
+转换,Transformation
+考勤统计,Attendance statistics
+业代拜访执行客户详情,Business visits to execute customer details
+业代拜访执行明细客户详情2,Visit the details of the detailed client 2
+业代拜访执行明细客户详情,Visit the details of the detailed client
+查询文本,Query text
+申请时间,Application time
+放弃导入,Give up the import
+测试,test
+是否将选中的客户转移给其他人负责？,Is the selected customer transferred to another person?
+查询-KA系统编号,Query the -KA system number
+查询-KA系统名称,Query the name of the -KA system
+查询-班次名称,Query - class name
+查询-日历名称,Query - Calendar name
+查询-开始日期,Query - start date
+查询-结束日期,Query - end date
+查询-姓名,Query - name
+拜访中,Visit
+待拜访,Visit
+已成交,Have done a deal
+已完成,Completed
+拜访中,Visit
+查询-新品有效期,Query - new period validity
+查询-是否重点产品,Query - key products
+查询-产品编码,Query product coding
+查询-品牌,Query - Brand
+查询-品类,Inquiries - Category
+查询-产品名称,Query - product name
+迟到,Late
+定位异常,Abnormality of location
+早退,Early retreat
+正常,normal
+主负责人,Chief executive
+客户名称或负责人,Customer name or person in charge
+低价,low price
+缺货,Out of stock
+未贴价格签,No price tag
+高价,high price
+锁码,Lock code
+拜访签到,Visit a check-in
+库存盘点,Inventory inventory
+拜访签退,Visit a sign back
+进店签到,Enter a shop to sign in
+离店签退,Sign off from the shop
+成交日期,Date of transaction
+number控件,Number control
+变更负责人,Change the person in charge
+编辑渠道客户,Editor channel customer
+终端拜访执行统计表,Terminal visit execution statistics
+新增终端,New terminal
+编辑终端,Edit terminal
+产品铺货统计表,Product pavement statistics
+新增KA,New KA
+编辑KA,Editor KA
+编辑产品,Edited product
+新增产品,New product
+编辑班次,Edit class
+新增班次,New shift
+编辑考勤日历,Edit the attendance calendar
+新增考勤日历,New attendance calendar
+编辑考勤组,Edit attendance unit
+查看考勤组成员,View the attendance group members
+新增考勤组,New attendance unit
+此处留空,Leave a blank here
+金额输入,Amount input
+品相检查,Phase examination
+新品有效期default,New product validity period default
+新品有效期month,New product validity period month
+新品有效期year,New product validity period year
+无限制,Unlimited
+班次信息,Class information
+查询-是否新品,Query - whether or not new
+个人信息页面,Personal information page
+产品管理,product management
+产品管理详情,Details of product management
+转换的营销组织和主岗位,Transfer marketing organization and main post
+要转换的营销组织和主岗位！,To transform the marketing organization and the main position!
+待选岗位,Post selection
+必须拍照,Have to take pictures
+可选拍照,Take a photo
+制定便捷计划,Make convenient plans
+客户姓名,Customer name
+首页客户分析,Home page customer analysis
+查询-人员姓名,Query - person name
+查询-人员手机号,Query - staff cell phone number
+图片,picture
+区域名称路径,Area name path
+营销组织ID,Marketing organization ID
+品项变化,Item change
+是否新品,Whether the new product is new
+实际拜访时间,Real visit time
+业代拜访执行详情,Business visit
+新增人员,New personnel
+编辑人员,Editors
+终端客户拜访趋势分析,End customer visit trend analysis
+终端客户结构分析,End customer structure analysis
+首页终端客户拜访趋势分析（放大）,Home page terminal customer visit trend analysis (enlargement)
+已办事项,Run matters
+流程名称,Process name
+流程,Technological process
+当前步骤,Current steps
+接收日期,Receiving date
+处理日期,Processing date
+发起人,Initiator
+隐藏状态,Concealment state
+树导航,Tree navigation
+建议零售价(元),Suggested retail price (yuan)
+箱重(KG),Box weight (KG)
+保质时长(天),Long duration (day)
+模块3,Module 3
+模块7,Module 7
+模块8,Module 8
+模块9,Module 9
+模块10,Module 10
+模块11,Module 11
+模块12,Module 12
+模块13,Module 13
+模块14,Module 14
+模块15,Module 15
+模块16,Module 16
+模块17,Module 17
+模块24,Module 24
+模块25,Module 25
+模块26,Module 26
+模块27,Module 27
+模块31,Module 31
+模块32,Module 32
+模块41,Module 41
+模块33,Module 33
+首页终端客户结构分析（放大）,Home page terminal customer structure analysis (amplification)
+test_报表首页,Test_ report page
+人员明细test2,Personnel test2
+查询-渠道客户编码,Query channel customer code
+KA系统编码,KA system coding
+查询-KA系统编码,Query -KA system coding
+业务员-验证,Salesman - Verification
+查询-开始工作日期,Query - start work date
+查询-结束工作日期,Query - end work date
+工作日期,Work date
+打卡日期,Date of beating
+拜访时间：,Visit time:
+渠道编码,Channel coding
+助理,assistant
+审批管理,Examination and approval management
+终端客户情况折线图,End customer line diagram
+费用管理,Cost management
+业代拜访测试1026,Industry visit test 1026
+大区经理,District Manager
+终端客户结构分析（统计）,End customer structure analysis (Statistics)
+模块测试表单,Module test form
+模板测试表单,Template test form
+无限制,Unlimited
+查询-产品品牌,Query product brand
+查询-产品品类,Query product category
+终端客户情况分析表,End customer analysis table
+申请时间,Application time
+12月,December
+10月,October
+11月,November
+8月,August
+6月,June
+4月,April
+2月,February
+9月,September
+7月,July
+5月,May
+3月,March
+1月,January
+所属区域,Belong to the region
+这里有行文字,There are lines of text
+员工考勤汇总,Staff attendance summary
+拜访工作,Visit a job
+主管,Executive director
+模板测试-新增终端,Template test - new terminal
+模板测试-终端列表,Template test terminal list
+手机端时间,Mobile phone end time
+模板测试-控件,Template test - control
+按钮11,Button 11
+模板测试-控件测试,Template test control test
+文本框,Text box
+时期选择,Time selection
+日期区间,Date interval
+电话号码,Phone number
+选择框,Selection box
+排序,sort
+拍照控件,Photo control
+下拉列表,Spinner
+级联筛选,Cascade screening
+选择树,Selection tree
+定位控件,Positioning control
+数字区间,Digital interval
+开发-控件菜单调试,Development control menu debug
+开发-控件菜单,Development - control menu
+表格,form
+模板测试-终端详情,Template test - terminal details
+模板测试-进店签到,Template test - enter shop sign in
+签到定位,Sign in and locate
+模板测试-拜访签退,Template test visit sign back
+签退定位,Sign back location
+模板测试-店面工作,Template testing storefront work
+控件标题2,Control Title 2
+控件标题33,Control Title 33
+启用34,Enable 34
+模板测试-终端管理,Template test terminal management
+终端编号,Terminal number
+模板测试-看板二开,Template test - Kanban two open
+模板测试-空白测试,Template test blank test
+模板测试-店面检查,Template test - store check
+物料使用是否达标,Whether the use of materials is up to the standard
+模板测试-switchpage,Template test -switchpage
+模板测试-报表页面,Template test report page
+承德市,Chengde City
+今日看板,Today's Kanban
+调试专用-新控件,Debug special - new controls
+级联,cascade
+下拉列表框,combobox
+大文本框,Large text box
+日期区间（年月日）,Date interval (year and month)
+排序按钮,Sort button
+调试专用-已有控件,Debugging dedicated - existing controls
+数字区间选择,Digital interval selection
+电话号码输入,Telephone number input
+日期（年月日）,Date (year and month)
+测试web编辑,Test web editing
+应用副名称,Application vice name
+应用名称,apply name
+8.0应用页面入口列表,8 application page entry list
+8.0应用页面入口新增,8 application page entry
+应用,application
+开订单列表web端2,Open order list web end 2
+订单门店,Order store
+订-单列表2,Order list 2
+下单日期,Order date
+订单金额,Order amount
+订-单列表,Order list
+简易订单填写,Simple order filling
+订单状态,Order status
+简易订单列表,Simple order list
+我的订单管理,My order management
+钱,money
+id,ID
+考勤统计2,Attendance statistics 2
+货架排面数量,Shelf Number
+上报时间,Reporting time
+冰箱牌面数量,Number of refrigerator deck
+生动化检查列表,Vividness checklist
+海报数量,Number of posters
+拜访小结列表,Visit a summary list
+密码,Password
+检查用户新增,Check users to add
+用户名,User name
+调试专用-输入控件,Debug dedicated - input controls
+产品品牌2,Product brand 2
+产品品牌1,Product brand 1
+产品品牌4,Product brand 4
+产品品牌3,Product brand 3
+产品品牌5,Product brand 5
+是否采纳,Whether to adopt
+我要提建议,I want to make a suggestion
+截图,screenshot
+应用端,Application end
+问题描述,Problem description
+提交日期,Date of submission
+我的建议反馈,Feedback from my suggestion
+控件名称,Control name
+控件文本值,Control text value
+3.如果用图片来说明问题，请上传（最多5张）,3. if you use pictures to illustrate problems, please upload (up to 5 sheets).
+2.我们存在哪些不足（详细描述）,2. what are our shortcomings (detailed description)
+1.请选择您正在使用的应用端,1. please select the application side you are using
+建议反馈,Suggestion feedback
+店铺到达,Shop arrival
+当前位置,current location
+冰箱排面数量,Number of refrigerators
+我的建议,My suggestion
+控件ID,Control ID
+控件测试-显示类,Control test - display class
+调试专用-显示类控件,Debug special - display class controls
+按钮（带边框）,Button (with a border)
+按钮（绑定事件）,Button (binding event)
+文字控件,Text control
+文字(3行）,Text (3 lines)
+文字(1行）,Text (1 lines)
+按钮(橙色背景）,Button (orange background)
+按钮控件,Button control
+按钮(蓝色字体）,Button (blue font)
+文字控件(1行）,Text control (1 lines)
+文字控件（3行）,Text control (3 lines)
+按钮(黑字橙背景）,Button (black word orange background)
+按钮(蓝字灰背景）,Button (blue gray background)
+数字输入（千位分隔符）,Digital input (1000 bit separator)
+金额（负数）,Amount (negative)
+金额（1位小数）,Amount (1 decimal)
+数字输入（1位小数）,Digital input (1 bit decimal)
+金额（千位分隔）,Amount (thousand separated)
+电话号码（无国编）,Telephone number (no country editor)
+电话号码（国编）,Telephone number (country editor)
+大文本框（50字）,Large text box (50 words)
+电话号码（手机校验）,Telephone number (cell phone check)
+数字输入（10-100）,Digital input (10-100)
+金额输入（100-500）,Amount input (100-500)
+电话号码（短信）,Telephone number (SMS)
+电话号码（可国编）,Telephone number (country editor)
+电话号码（拨打）,Telephone number (dialing)
+调试专用-输入类控件,Debug special - input class controls
+文本框（10字）,Text box (10 words)
+数字输入（个）,Digital input (a)
+数字输入控件,Digital input control
+电话号码控件,Telephone number control
+金额输入控件,Amount input control
+日期（到秒）,Date (to second)
+调试专用-时间类控件,Debug special - time class controls
+日期（到天）,Date (to day)
+日期（单位秒）,Date (per unit second)
+数字区间控件,Digital interval control
+时期选择控件,Time selection control
+日期区间控件,Date interval control
+日期（年月日）控件,Date (year and month) control
+调试专用-功能类控件,Debugging dedicated - function class controls
+附件控件,Attachment control
+排序按钮控件,Sort button control
+选择按钮,Select button
+选择树（允许搜索）,Select a tree (allow search)
+级联（叶节related）,Cascade (leaf node related)
+级联（单选）,Cascade (Dan Xuan)
+级联（简要显示）,Cascading (brief display)
+下拉搜索（多选）,Drop-down search (multi selection)
+选择框（多选）,Selection box (multiple selection)
+下拉列表（选项改变）,Drop-down list (option change)
+下拉搜索（单选）,Drop-down search (Dan Xuan)
+下拉列表（绑定事件）,Drop-down list (binding event)
+级联（隐藏根节点）,Cascading (hidden root node)
+选择框（单选）,Selection box (Dan Xuan)
+级联（叶节indivi）,Cascade (leaf node indivi)
+级联（显示根节点）,Cascade (display root node)
+下拉选择树,Drop-down selection tree
+选择树（不展开节点）,Select a tree (no expansion node)
+选择框（button模式）,Selection box (button mode)
+级联（叶节gather）,Cascade (leaf node gather)
+导航选择树,Navigation selection tree
+调试专用-选择类控件,Debug special - select class controls
+选择树（全展节点）,Selection tree (full extension node)
+选择框（3项排列）,Selection box (3 items)
+级联（多选）,Cascade (multi selection)
+级联（完整显示）,Cascading (complete display)
+选择树（多选）,Selection tree (multi selection)
+选择树控件,Select tree control
+下拉列表控件,Drop-down list control
+下拉（搜索）控件,Drop-down (search) control
+选择框控件,Select box control
+级联控件,Cascade control
+南,south
+北,north
+东,east
+西,west
+金额输入提交,Amount input submission
+大文本提交,Large text submission
+数字输入提交,Digital input submission
+电话号码6提交,Telephone number 6 submission
+电话号码3提交,Telephone number 3 submission
+数字输入3提交,Digital input 3 submission
+电话号码2提交,Telephone number 2 submission
+数字输入4提交,Digital input 4 submission
+电话号码5提交,Telephone number 5 submission
+数字输入1提交,Digital input 1 submission
+电话号码4提交,Telephone number 4 submission
+数字输入2提交,Digital input 2 submission
+电话号码提交,Telephone number submission
+电话号码1提交,Telephone number 1 submission
+金额4提交,Amount 4 submission
+金额2提交,Amount 2 submission
+金额3提交,Amount 3 submission
+金额1提交,Amount 1 submission
+文本提交,Text submission
+数字区间提交,Digital interval submission
+Web端,Web end
+APP端（iOS）,APP end (iOS)
+其他,Other
+APP端（Android）,APP end (Android)
+输入名称,Input name
+未采纳,Not adopted
+已采纳,Have adopted
+已拒绝,Have refused
+控件标题3,Control title 3
+问题中心,Problem center
+组织维度名称,Organization dimension name
+组名,Group name
+开始日期,Start date
+审核日期,Date of audit
+结束日期,End date
+问题分类,Problem classification
+组织分类名称,Organization classification name
+队名,Team name
+严重等级,Severity grade
+拒绝,refuse
+采纳,Adopt
+WEB端,WEB end
+APP端(iOS),APP end (iOS)
+APP端(Android),APP end (Android)
+用户体验优化,User experience Optimization
+逻辑错误,Logical error
+页面缺陷,Page defects
+系统报错,System error
+查询-是否采纳,Query - whether or not to adopt
+查询-问题描述,Query - problem description
+小组,group
+建议反馈详情,Suggestion for feedback details
+提交用户,Submitting a user
+审核用户,Audit user
+组织分类,Organization classification
+功能操作不方便？使用时遇到系统问题？或有更好的功能建议？欢迎您随时提出来！,Is the functional operation inconvenient? Do you encounter a system problem when you use it? Or have better functional recommendations? You are welcome to mention it at any time!
+详细描述,Detailed description
+问题等级,Problem level
+审核,To examine
+Test主管拜访详情,Test supervisor visit details
+拜访执行,Visit the execution
+按拜访完成率排名,Ranking by call completion rate
+按拜访成功率排名,Ranking by visiting success rate
+调试专用-终端管理,Debug special - terminal management
+调试-终端客户管理,Debug terminal customer management
+调试-客户管理,Debug - customer management
+调试-渠道客户管理,Debug - channel customer management
+code路径编码,Code path coding
+供货商名称,Supplier name
+流程规则2,Process rule 2
+流程规则1,Process rule 1
+流程规则,Process rules
+新首页报表测试,New home report test
+报表测试,Report test
+链接到测试报表表单,Link to the test report form
+请选择数据重复的处理方式1,Please select the process of data duplication 1
+查询-岗位名称,Query - post name
+查询-帐号关联状态,Query - account association state
+查询-邮箱,Query - mailbox
+查询-工号,Query - work number
+查询-手机号码,Query - mobile phone number
+终端管理转换营销组织,Terminal management transformation marketing organization
+是否将选中的客户的营销组织替换为以下值？,Do you want to replace the marketing organization of the selected customer with the following values?
+是否将当前查询得到的所有客户的营销组织替换为以下值？,Do you want to replace the marketing organization of all the customers currently queried for the following values?
+test_历史拜访记录分组,Test_ history visit record group
+分组列表,Packet list
+上次工作计划,Last work plan
+时间,time
+今日工作总结,Summary of today's work
+明日工作计划,Tomorrow's work plan
+写日报,Write a daily newspaper
+接收人,Recipient
+补写报告,Write up Report
+报告详情,Details of the report
+补写,Supplement and write
+我发出的,I sent out
+我收到的,I received it
+工作报告,Work report
+月报,Monthly report
+周报,weekly
+日报,daily
+分组历史记录,Group history record
+写周报,Write a weekly newspaper
+写月报,Write a monthly report
+自定义页面-组织管理,Custom page organization management
+查看进店签到,Check in to sign in
+查看离店签退,Check out and sign off
+查看生动化检查,View vividness check
+不达标,Fail to reach the standard
+达标,Reach the standard
+查看终端检查,View terminal check
+渠道管理转换营销组织,Channel management transformation marketing organization
+拜访计划-已计划,Visit plans - planned
+客户状态,Customer status
+拜访计划-未计划,Visit plans - unplanned
+修改拜访计划,Revise the visit plan
+查询-是否有效地址,Query - whether or not the address is valid
+是否有效地址,Whether or not the address is valid
+修改拜访计划,Revise the visit plan
+编辑当前计划,Edit the current plan
+已计划,Already planned
+未计划,Unplanned
+工作计划,Work plan
+我的报告,My report
+人员照片,Photos of people
+更新时间,Update time
+报告摘要,Summary of the report
+人员名称,Name of personnel
+更新人,Renewing
+报告状态,Reporting state
+人员组织,Organization of personnel
+报告类型,Report type
+报告所属时间,The time of the report
+发送人列表,Sender list
+发送人,Sender
+查询-报告类型,Query - report type
+查询-报告所属时间,Query - reporting time
+查询-报告时间,Query - reporting time
+查询-报告所属起始时间,Query - the start time of the report
+查询-报告所属结束时间,The end time of the query - Report
+报告人,Rapporteur
+查看品项检查,Check item check
+接受人,Recipient
+工作总结,Work summary
+所属时间：,The time to belong:
+客户类型type,Customer type type
+添加,Add to
+KPI编辑,KPI editor
+编辑,edit
+批量设置,Batch setup
+KPI设置,KPI settings
+距离,distance
+查看拜访签到,Visit a check in
+查看拜访签退,Check in and sign back
+查看库存盘点,Check inventory inventory
+test品项,Test item
+取事件专用表单,Take the event specific form
+test品项检查,Test item inspection
+test盘点,Test inventory
+补写内容,Write up content
+查看进店签到1,Check in to sign in 1
+当数据重复时如何处理：,How to deal with the data when the data is repeated:
+当数据重复时如何处理,How to deal with the data duplication
+覆盖导入,Overlay import
+客户排序,Customer sort
+查询-报告人,Inquire - Reporter
+写报告,Write a report
+横杠,Horizontal bar
+打卡时间段,Punch time
+迟到明细,Late detail
+确认,confirm
+个人中心,Personal Center
+修改密码,Modify the password
+终端拜访统计,Terminal visit statistics
+终端客户情况分析,Analysis of terminal customer situation
+本地报告,Local report
+总经理,General manager
+经理,manager
+资讯文件,Information file
+通知公告,Notice Bulletin
+公告标题,Bulletin title
+是否置顶标识位,Whether or not the top marking position is placed
+发布时间,Release time
+创建人姓名,Name of the Creator
+filter-公告类型,Filter- bulletin type
+公告类型中文,Bulletin type Chinese
+公告类型,Type of bulletin
+已撤回,Withdrawn
+发布开始日期,Release start date
+查询-类型,Query - type
+关键字,Keyword
+发布,Release
+置顶,Set top
+新增公告,New announcement
+公告详情,Details of the announcement
+已发布,Published
+未发布,Unpublished
+未浏览占比,Non browsing ratio
+编辑公告,Editorial Bulletin
+撤回,withdraw
+浏览记录,Browse records
+发布结束日期,Release date
+标题,Title
+类型,type
+占位文字,Placeholder text
+通知公告-查看,Notice Bulletin - check
+返回,Return
+发布人,Publisher
+内容,content
+是否置顶,isTop
+是否置顶,isTop
+公告详情-ymf,Details of the announcement -ymf
+公告详情-ymf,Details of the announcement -ymf
+全部接收人姓名,Full recipient name
+全部接收人姓名,Full recipient name
+全部接收人姓名,Full recipient name
+发布人姓名,Publisher's name
+发布人姓名,Publisher's name
+发布人姓名,Publisher's name
+发布人姓名,Publisher's name
+发布人姓名,Publisher's name
+创建人姓名,Name of the Creator
+创建人姓名,Name of the Creator
+创建人姓名,Name of the Creator
+公告内容,Bulletin content
+公告内容,Bulletin content
+公告内容,Bulletin content
+通知公告_YMF,Notice bulletin _YMF
+竞品名称,Competition name
+竞品厂商,Competitive product manufacturer
+竞品编码,Bidding code
+竞品产地,Origin of competitive products
+竞品管理,Competitive product management
+竞品图片,Competitive picture
+name路径,Name path
+竞品规格,Competition specification
+竞品简称,Bidding for short
+查询-竞品编码,Query - competition coding
+查询-竞品名称,Query - contest name
+订单费用,Order cost
+目标销量,Target sales
+记录状态,Record state
+费用编码,Cost coding
+目标销售额,Target sales
+费用名称,Cost name
+费用金额,Cost amount
+查询-费用编码,Query cost coding
+费用形式,Cost form
+查询-费用形式,Query - cost form
+费用内容,Cost content
+查询-费用名称,Query - cost name
+发起,Launch
+目标销售额(元),Target sales (yuan)
+申请人,Applicant
+费用金额(元),Cost amount (yuan)
+关注区域,Area of concern
+竞品品类,Competitive product category
+竞品品牌,Competitive brand brand
+导出指定客户,Exporting the specified customer
+导入指定客户,Importing the specified customer
+待审批,To be examined and approved
+驳回,Reject
+未发起,Not initiated
+竞品管理详情,Competitive product management details
+通知公告详情_YMF,Notice bulletin details _YMF
+新增竞品,New competition
+编辑竞品,Editors
+调试-日历控件,Debug - Calendar control
+调试-崇斌,Debug - Chong Bin
+费用分摊类型,Cost sharing type
+投放月份,Launch month
+费用申请人,Cost applicant
+投放客户类型,Launch customer type
+订单费用-详情页面,Order cost - details page
+归属月份,Attribution month
+搭赠,Give a gift
+费用项目,Cost item
+查询-竞品品类,Query - competitive product category
+关联促销活动,Related promotional activities
+对象类型,object type
+促销活动id,Sales promotion ID
+订单-产品列表,Order - Product List
+品类id,Category ID
+品牌id,Brand ID
+订单管理,Order management
+申请人id,Applicant ID
+申请人营销区域,Applicant marketing area
+活动,activity
+名称/编码/条码,Name / code / bar code
+辅导费,Coaching fee
+品牌,brand
+资产投放,Asset delivery
+资产型号,Asset model
+资产名称,Asset name
+资产编码,Asset coding
+出厂编号,Factory number
+资产编号,Asset number
+投放终端,Launch terminal
+投放终端名称,Launch terminal name
+资产规格,Asset specifications
+投放日期,Launch date
+使用状态,Use state
+资产管理,asset management
+投放终端记录,Launch terminal record
+查询-资产编码,Query asset coding
+查询-资产名称,Query - Asset name
+查询-资产类型,Query - asset type
+查询-使用状态,Query - usage state
+订单来源,Order source
+制单人,Single person
+订单编号,Order number
+是否厂家直供,Does the manufacturer make a direct supply
+最终订单金额,Final order amount
+终端订单列表,Terminal order list
+下单人,Single person
+投放方式,Delivery mode
+资产类型,Asset type
+异常,abnormal
+交货日期,Date of delivery
+优惠金额,Preferential amount
+结算方式,Settlement method
+订单类型,Order type
+折扣金额,Discounted amount
+订单来源id,Order source ID
+收货人地址,Address of the consignee
+收货人,Consignee
+下单人id,Single person Id
+营销组织id,Marketing organization ID
+收货人电话,Phone
+供货商编号,Supplier number
+终端订单详情,Terminal order details
+终端订单产品列表,Terminal order product list
+终端订单产品详情,Terminal order product details
+价格管理,Price management
+终端订单购物车,Terminal order shopping cart
+原生页面,Native PAGE
+订单-产品列表2,Order - Product List 2
+资产投放-详情页面,Asset release - details page
+陈列纯度,Purity of display
+押金金额,Deposit amount
+投放时间,Launch time
+新增资产,New assets
+编辑资产,Edit the assets
+资产-投放终端纪录,Asset release terminal record
+查询-投放时间,Query - delivery time
+产品名称/编码/条码,Product name / code / bar code
+阿斯蒂芬,A Stephen
+厂家直供,Manufacturer's direct supply
+创建日期,Creation date
+实际贷款,Real loan
+供货商,supplier
+投放信息,Release information
+终端订单,Terminal order
+查看已选,View the selected
+投放终端-选择列表,Launch Terminal - selection list
+工作轨迹,Work trajectory
+选择,Choice
+下单编辑弹窗,Single edit window
+选择投放终端,Select the launch terminal
+订单编辑弹窗,Order edit window
+工作轨迹图,Work trajectories
+查看终端订单详情,View terminal order details
+赠品价格,Gift price
+赠品规格,Gift specification
+赠品管理,Gift management
+赠品管理详情,Details of the gift management
+赠品单位,Gift unit
+赠品品类,Gift category
+赠品名称,Name of gift
+赠品价格(元),Gift price (yuan)
+新增赠品,New gift
+编辑赠品,Editor's gift
+分销单位（单位）,Distribution unit (unit)
+单价（元）,Unit price (yuan)
+单品（单位）,Single product (unit)
+分销返利（元）,Distribution rebate (yuan)
+赠品编号,Gift number
+赠品图片,Gift picture
+查询-赠品编号,Inquiries - Gift numbering
+查询-赠品名称,Query - Gift name
+查询-赠品品类,Inquiries - gift category
+终端价格,Terminal price
+最低价,Minimum price
+建议价,Suggested price
+渠道客户价格,Channel customer price
+最高价,The highest price
+参与活动,Participation activities
+销售类型,Sales type
+价格单,Price list
+价格单详情,Details of the price list
+产品id,product id
+价格单导入,Price single import
+价格单导出,Price list
+通过,adopt
+导入渠道客户,Importing channel customers
+导入终端客户,Importing terminal customers
+下一步,Next step
+添加到购物车,Add to the shopping cart
+购物车,Shopping Cart
+添加产品,Add products
+整单优惠,A single discount
+赠品数量,Number of gifts
+投放终端id,Launch terminal ID
+作废,To void
+查询,query
+选择客户,Select customers
+选择搜索,Select Search
+价格单_新增,New price
+竞品促销价,Competitive price promotion price
+key路径值,Key path value
+陈列拍照,Display and take pictures
+竞品零售价,Retail price of competitive goods
+查询-字典值,Query dictionary value
+价格单id,Price list ID
+竞品管理采集报表,Competitive product management collection report
+实际使用纯度,Actual use of purity
+拍照,Photograph
+资产巡检采集报表,Assets inspection and collection report
+查询-营销组织名称,Query - marketing organization name
+SKU数目,SKU number
+资产巡检,Asset inspection
+目标使用纯度,Target use purity
+确认订单,Confirmation of order
+送货地址,Delivery address
+页面状态_新增,New page status
+页面状态_编辑,Page status editor
+竞品零售价(元),Retail price of competitive products (yuan)
+陈列形式,Display form
+竞品促销价(元),Competitive price promotion price (yuan)
+订单费用-详情页面-第2步,Order cost - details page - second step
+客户名称id,Customer name ID
+搭赠规则,Give a gift rule
+投放范围,Scope of delivery
+指定客户,Designated customer
+占位,seize a seat
+拜访订单,Visit the order
+电话订单,Telephone order
+选择-订单客户列表,Selection - order customer list
+选择产品,Selection of products
+选择费用,Selection cost
+选择赠品,Choice of gifts
+订单费用-详情页面-第1步,Order cost - details page - first step
+选择终端订单客户,Select terminal order customer
+单品数量,Single quantity
+分销数量,Distribution quantity
+分销单价,Distribution unit price
+查询-下单人,Query - single person
+选择-订单下单人列表,Selection - single person list under order
+查询-客户编号,Query - customer number
+选择终端订单下单人,Select the single person under the terminal order
+费用结束时间,End of cost
+费用投放金额,Amount of cost
+费用开始时间,Start of cost
+新增客户-终端列表,New customer - terminal list
+费用目标销售额,Cost target sales
+订单产品,Order product
+测试新增客户,Testing new customers
+客户表格列表行定义,Customer table list row definition
+客户表格列表,List of customer tables
+促销活动,Sales promotion
+分销价格,Distribution price
+产品小计,Product submeter
+SKU名称,SKU name
+费用表格列表,List of cost tables
+移除费用,Removal cost
+费用表格列表行定义,Cost table list row definition
+新增费用,New cost
+分摊比例,Apportionment ratio
+分摊金额(元),Apportionment of amount (yuan)
+分销返利,Distribution rebate
+金额,Amount of money
+新增客户-渠道列表,New customer - channel list
+费用目标销售金额,Cost target sales amount
+查询-渠道客户名称,Query - channel customer name
+产品表格,Product form
+赠品表格,Gift form
+表格1,Table 1
+表格2,Table 2
+表格3,Table 3
+操作,operation
+查看购物车,Look at the shopping cart
+促销活动下拉框,Sales promotion frame
+奖励数量,Number of rewards
+奖励类型,Reward type
+费用-新增产品,Cost - new products
+查询-赠品编码,Query gift coding
+费用-新增赠品,Cost - New Gift
+查询-赠品类型,Query - gift type
+赠品编码,Gift coding
+搭赠模式,Give a gift model
+赠品表格列表行定义,Definition of a list of gift tables
+移除赠品,Remove the gift
+产品表格列表,Tabular list of products
+产品项目,Product project
+每笔订单最多可选择多少种赠品,How many kinds of gifts are available for each order
+赠品项目,Gift project
+产品表格列表行定义,Product table list row definition
+赠品表格列表,List of gifts
+移除产品,Remove the product
+申请人营销区域id,Applicant marketing area ID
+订单返利,Order rebate
+产品总价,Total product price
+费用id,Cost ID
+查询-申请人营销区域id,Query - applicant marketing area ID
+查询-费用id,Query - cost ID
+提交订单,place order
+新增订单费用,New order cost
+app编辑0616,App editor 0616
+查询-年份,Inquiries - year
+批量新增,Batch addition
+人员KPI列表,Staff KPI list
+查询-对象名,Query object name
+组织KPI列表,Organization of KPI list
+赠品,Gift
+本品,This product
+简单搭赠,Simply give a gift
+搭赠坎级,Give a gift to the camp
+不全额累进,Incomplete accumulation
+坎级搭赠,Cambridge
+全额累进,Full progress
+整理数据,Tidy up the data
+添加一条测试数据,Add a test data
+购买数量,Purchase quantity
+购买单位,Purchase unit
+终端信息修改,Terminal information modification
+qtesterkai,Qtesterkai
+分摊比例(百分比%),Proportion of apportionment (percentage%)
+测试路线1,Test route 1
+测试一下嵌套,Test nesting
+实际路线,Actual route
+计划路线,Planned route
+测试路线2,Test route 2
+调试-工作轨迹,Debug - work trajectory
+所属KA名称,The name of the KA
+终端信息修改1,Terminal information modification 1
+qtestdetail0125,Qtestdetail0125
+查询-指标项,Query - index item
+规则表格列表,List of regular tables
+本品数量,Quantity of this product
+坎级,Sill level
+规则表格列表行定义,Rule table list row definition
+新增规则,New rules
+整理规则数据,Sorting rule data
+移除规则,Remove rules
+活动时间,Activity time
+单点限额,Single point limit
+费用计划列表,Cost plan list
+人员KPI批量设置,Staff KPI batch setup
+赠送,Give
+购买,purchase
+赠送赠品数量,Give away the number of gifts
+购买本品数量,Purchase the quantity of this product
+≤ 本品总量 ≤,Less than the total amount of this product
+选择成员,Select members
+购买(本品名称),Purchase (the name of this product)
+赠送(赠品名称),Gift (name of a gift)
+新增坎级,New level
+组织KPI设置,Organization KPI settings
+字典值x,Dictionary value x
+积分,integral
+新增本品,Add this product
+是否投放到区域,Do you put it in the area
+是否投放到渠道客户类型,Whether or not it is put into the channel customer type
+是否投放到KA,Is it put to KA
+上级客户名称,Superior customer name
+渠道客户信息修改,Channel customer information modification
+选择人员,Selection staff
+设置年份,Set Year
+设置年费,Set up the annual fee
+费用类型,Cost type
+终端投放申请-费用信息,Terminal application - cost information
+费用信息,Cost information
+移除终端,Remove terminal
+移除渠道,Remove channels
+渠道编号,Channel number
+新增渠道,New channels
+渠道表格列表,List of channel tables
+渠道表格列表行定义,Channel table list row definition
+渠道名称,Channel name
+选择渠道,Selection channel
+渠道级别,Channel level
+人员KPI设置（旧）,Staff KPI settings (old)
+组织KPI批量设置,Organization of KPI batch settings
+选择组织,Selected organization
+费用分摊类型,Cost sharing type
+（需要切换年份，请在查询条件中进行更改）,(to change the year, please make changes in the query conditions).
+设置年份（需要切换年份，请在查询条件中进行更改）,Set year (need to switch year, please change in query condition)
+单价,Unit Price
+指标id,INDEX ID
+费用申请记录,Cost application record
+投放金额,Amount of investment
+投放状态,Launch state
+赠品单品单位,Single gift unit
+赠品分销单位,Gift distribution unit
+查询-产品编号,Query product number
+查询-赠品规格,Query - Gift specification
+待审核,To be audited
+待发起,To be launched
+审核状态,Audit status
+测试解析异常,Test parsing exception
+保存并发布,Save and publish
+通知公告-详情,Notice Bulletin - details
+附件上传,Attachments upload
+审核通过,Review and pass through
+审核不通过,Audit does not pass through
+提交修改,Submission of modification
+字典值bbb,Dictionary value BBB
+字典值ww,Dictionary value WW
+字典值xxx,Dictionary value XXX
+字典值ee,Dictionary value EE
+字典值mmm,Dictionary value mmm
+字典值aaa,Dictionary value AAA
+审批人,Approver
+费用编号,Cost number
+协议拍照,Photo of the agreement
+投放申请审批意见,Comment on the application of the application
+计划内容,Plan content
+申请时间：,Application time:
+活动时间：,Activity time:
+费用名称：,Name of the cost:
+投放金额：,Amount of investment:
+终端名称：,Terminal name:
+投放状态：,Launch status:
+申请人：,Applicant:
+执行时间,execution time
+执行状态,State of execution
+正在执行,Being carried out
+费用项目名称,Cost item name
+上报状态,State of reporting
+费用正在执行,The cost is being carried out
+稽核状态,Audit status
+费用稽核,Cost audit
+执行说明,Executive instructions
+费用计划,Cost plan
+稽核类型,Audit Type
+是否必须稽核,Whether it must be audited
+费用名称/终端名称,Cost name / terminal name
+执行拍照,Take a photo
+执行金额,amount of money involved in execution
+查询-投放客户类型,Query - put the customer type
+成员信息,Member information
+执行上报,Carry out a report
+测试aaa,Test AAA
+测试aaabbbb,Test aaabbbb
+测试aaabbbbdd,Test aaabbbbdd
+审核人,Auditor
+客户id,Customer ID
+审核时间,Audit time
+审核意见,Audit opinion
+终端投放申请单,Terminal application form
+投放金额(元),Amount of money (yuan)
+执行历史记录,Historical records
+执行时间段,Execution time
+调试表单q,Debug form Q
+执行人,Executor
+执行记录详情,Execution of record details
+终端稽核,Terminal audit
+稽核历史纪录,Historical record of audit
+稽核人,Auditor
+稽核时间,Audit time
+上一步,The last step
+稽核说明,Audit explanation
+稽核纪录详情,Details of audit records
+稽核金额,Audit amount
+稽核照片,Audits
+渠道拜访执行统计表,Channel visit execution statistics
+渠道客户情况分析表,Channel customer analysis table
+终端销售业绩分析表,Terminal sales performance analysis table
+资产状况统计表,Asset status statistics
+终端费用执行分析表,Terminal cost execution analysis table
+分销（单位）,Distribution (unit)
+终端申请,Terminal application
+费用执行上报,Cost implementation
+历史记录,Historical records
+实际投放金额(元),Actual amount of money (yuan)
+费用管理导航,Cost management navigation
+状态中文值,State value of Chinese
+申请人名称,Name of the applicant
+渠道类型值,Channel type value
+审批,Examination and approval
+记录id,Record ID
+终端投放申请审批,Examination and approval of terminal application
+费用类型：,Type of cost:
+费用计划-列表,Cost plan - List
+执行上报2,Carry out the report 2
+查询-费用类型,Query - cost type
+终端客户拜访趋势,Terminal customer visit trend
+终端拜访统计报表,Terminal visit statistical report
+保存类型,Save type
+投放纪录,Launch record
+投放记录,Release record
+投放记录-列表,Drop the record - List
+查询-审核状态,Query - audit status
+费用计划-详情-第一步,Cost plan - details - first step
+申请人所属营销区域,The marketing area of the applicant
+费用类别,Cost category
+区域内客户是否需要申请,Do customers in the region need to apply
+申请人姓名,Applicant's name
+是否有指定客户,Whether there is a designated customer
+是否投放到渠道类型,Will it be put into the channel type
+单点限额(元),Single point limit (yuan)
+堆箱,Heap box
+堆头,Pile head
+竞品零售价(元),Retail price of competitive products (yuan)
+陈列架,Display frame
+费用稽核列表,Cost audit list
+稽核列表,Audit list
+资产ID,Asset ID
+稽核状态(是否已稽核),Audit state (whether or not it has been audited)
+费用或终端名称,Cost or terminal name
+稽核状态（是否已稽核）,Audit state (whether or not it has been audited)
+稽核历史记录,Historical record of audit
+稽核开始时间,Audit start time
+稽核结束时间,Audit end time
+竞品ID,Competitive ID
+未稽核,Unaudited
+已稽核,Audits
+执行时间x,Execution time x
+执行时间y,Execution time y
+费用计划内容,Cost plan content
+费用Id,Cost Id
+终端Id,Terminal Id
+执行时间：,Execution time:
+终端地址：,Terminal address:
+稽核x状态,Audit x state
+不必须稽核,No audit must be made
+必须稽核,Must check
+抽查稽核,Check audit
+申请（计划）信息,Application (plan) information
+申请信息,Application information
+执行信息,Execution of information
+正常执行,Normal execution
+不正常执行,Abnormal execution
+实际执行金额(元),Actual execution amount (yuan)
+查看资产巡检,Check asset inspection
+终端id,Terminal ID
+查看竞品管理,View competition management
+UI_组织KPI_新增客户,UI_ organization KPI_ new customers
+组织KPI_新增客户,Organizing KPI_ new customers
+费用执行历史记录,History of cost execution
+费用稽核历史记录,History of cost audit
+赠送单位,Grant unit
+赠送数量,Number of gifts
+js转flycode,JS to flycode
+查询-费用时间,Query - cost time
+执行历史,The execution of history
+费用或终端客户,Cost or terminal customer
+渠道客户拜访统计,Channel customer visit statistics
+终端销售业绩,Terminal sales performance
+费用投放统计,Cost release statistics
+执行时间:,Execution time:
+费用名称:,Name of the cost:
+活动时间:,Activity time:
+投放金额:,Amount of investment:
+申请,Apply
+未执行,unexecuted
+已执行,executed
+UI_组织KPI_销售金额,UI_ organization KPI_ sales amount
+UI_组织KPI_销售数量,UI_ organization KPI_ sales volume
+UI_成员KPI_拜访次数,UI_ member KPI_ visits
+UI_成员KPI_新增客户,UI_ member KPI_ new customers
+UI_成员KPI_销售金额,UI_ member KPI_ sales amount
+UI_成员KPI_销售数量,UI_ member KPI_ sales volume
+longtengtest,Longtengtest
+费用执行审核,Cost implementation review
+拍照质量,Photo quality
+更多执行,More implementation
+查询-执行状态,Query execution state
+查询-审核结果,Query - audit results
+审核结果,findings of audit
+更多稽核,More audits
+执行正常,Perform normal
+执行异常,Execution abnormality
+执行人:,Executor:
+执行状态:,State of execution:
+操作日志,Operation log
+组织kpi统计报表,Organization of KPI statistical reports
+人员kpi统计报表,Personnel KPI statistical report
+销售金额,sales amount
+销售数量,Sales volumes
+查询-费用执行执行状态,Query - cost execution state
+查询-费用稽核执行状态,Query - cost audit execution state
+人员KPI批量设置2,Personnel KPI batch setting 2
+组织KPI批量设置2,Organization of KPI batch setting 2
+查询-稽核执行状态,Query - audit execution state
+查询-修改时间,Query modification time
+关联组织成员,Associate organization member
+查询-组织岗位名称,Query - organization post name
+费用计划-详情-第二步,Cost plan - details - second steps
+优秀,excellent
+费用执行审核-审核页面,Cost execution audit review page
+不通过,Not through
+图片质量,Picture quality
+良好,good
+订单录入,Order entry
+客户管理-妍测试,Customer management - Yeon test
+电话下单,Telephone order
+陈列,display
+通用,currency
+执行记录,Execution record
+投放范围内客户是否需申请,Do customers need to apply within the scope of delivery
+稽核时间:,Audit time:
+稽核人:,Auditor:
+申请(计划)信息,Application (plan) information
+稽核信息,Audit information
+稽核记录,audit logging
+订单费用-新增规则,Order cost - new rules
+订单费用-新增费用项目,Order cost - new cost item
+订单费用-新增产品,Order cost - new product
+订单费用-新增赠品,Order cost - New Gift
+订单费用-新增渠道客户,Order cost - new channel customers
+订单费用-新增终端客户,Order cost - new terminal customers
+费用计划-新增费用项目,Cost plan - new cost project
+费用计划-新增终端客户,Cost plan - new terminal customers
+终端客户-电话下单,Terminal customer - phone order
+渠道客户-电话下单,Channel customer - phone order
+渠道客户-2,Channel customer -2
+终端客户-2,Terminal customer -2
+今日销售金额,Today's sales amount
+今日销售数量,Today's sales volume
+订单列表-电话下单,Order list - phone list
+未审核,Unaudited
+订单费用-审核页面,Order cost audit page
+确认审核通过所选的计划？,Confirm the audit through the selected plan?
+提示,Prompt
+订单详情-电话下单,Order details - phone orders
+费用编码1,Cost code 1
+计划内容：,Plan content:
+需求测试,Demand test
+主按钮,Main button
+次按钮,Button
+费用计划-审核页面,Cost plan - Audit page
+情况,Situation
+产品总计,Product total
+供应商,Supplier
+数量,Number
+金额(元),Amount (yuan)
+客户,Customer
+查询-手机端时间,Query - cell phone end time
+终端详情页面LCY,Terminal details page LCY
+需求验证,Requirement verification
+终端列表12,Terminal list 12
+已作废,Have been abandoned
+订单-产品列表123,Order - Product List 123
+订单--产品列表,Order - Product List
+费用执行,Cost execution
+时间范围,time frame
+申请费用,Application fee
+执行费用,expense of execution
+加入购物车,Add to cart
+购物车1,Shopping cart 1
+业代终端销售业绩,Industry terminal sales performance
+订单列表,Order list
+通知公告-web,Notice bulletin -web
+取消置顶,Cancel the roof
+已加入购物车产品数量：,The number of products that have been added to the shopping cart:
+产品数量,Quantity of products
+最近巡检,Recent inspection
+资产状况,Asset status
+是否将选中的人员KPI替换为以下值？,Is the selected person KPI replaced by the following value?
+是否将当前查询得到的所有人员KPI替换为以下值？,Do you want to replace all the staff KPI in the current query to the following values?
+订单编号:,Order number:
+客户名称:,Customer Name:
+订单日期:,Order date:
+稽核实际投放金额(元),Audit actual amount of money (yuan)
+稽核拍照,Check and take photos
+是否将当前查询得到的所有组织KPI替换为以下值？,Do you want to replace all the organizational KPIs from the current query with the following values?
+是否将选中的组织KPI替换为以下值？,Do you replace the selected organization KPI to the following value?
+费用执行主管,Cost Executive
+主管-终端费用执行,Executive terminal cost execution
+资产状况主管,Asset status manager
+订单详情,Order details
+单品量,Single quantity
+分销量,Sub sales
+整单优惠（元）,A single discount (yuan)
+预览订单,Preview Order
+销售业绩,Sales performance
+营销区域id,Marketing area ID
+人员列表,Staff list
+订单编号或客户名称,Order number or customer name
+销售排名（按数量）,Sales ranking (by quantity)
+销售排名（按金额）,Sales ranking (by amount)
+销售趋势,Sales trend
+终端销售情况,Terminal sales
+早退明细,Early retreat
+缺卡明细,Lack of card details
+签到,Sign in
+签退,Sign back
+地点,place
+终端销售业绩主管,Terminal sales performance Supervisor
+合计,Total
+合计数量,Total quantity
+合计金额,Total amount
+查看,See
+分类价格,Classified price
+客户价格,Customer price
+客户价格导出,Customer price export
+客户价格导入,Customer price introduction
+渠道拜访情况主管,Channel visiting director
+主管渠道拜访情况,Executive channel visits
+渠道拜访情况业代,Channel visit
+销售趋势2,Sales trend 2
+详情,details
+已浏览,Have been browsed
+通知公告-浏览记录,Notice Bulletin - browse record
+未浏览,Not browsed
+浏览时间,Browsing time
+合计申请,Joint application
+合计执行,Total implementation
+异常合计,Abnormal aggregate
+资产合计,Total Assets
+渠道客户订单-详情,Channel customer orders - details
+订单分组,Order grouping
+渠道客户订单-选择客户,Channel customer orders - select customers
+查询-订单分组,Query order grouping
+查询-品牌id,Query - brand ID
+渠道客户订单列表,Channel customer order list
+查询-品类id,Query - class ID
+查询-条码,Query bar code
+查询-促销活动id,Query - promotion activity ID
+查询-产品名称/编码,Query product name / code
+查询-订单日期,Query - order date
+关联促销活动显示值,Associated promotional activity display value
+渠道客户订单,Channel customer order
+查询-供货商名称,Query - supplier name
+查询-endtime,Query -endtime
+查询-订单编号,Query - order number
+查询-是否厂家直供,Query - is the manufacturer direct supply
+查询-订单状态,Query order state
+营销组织全名,Full name of marketing organization
+查询-begintime,Query -begintime
+查询-订单来源,Query - order source
+查询-厂家直供,Inquiries - manufacturer direct supply
+查询-开始结束时间,Query - start time
+查询-记录状态,Query - record state
+订单费用-列表-web,Order cost - list -web
+订单费用-新增第一步-web,Order cost - new first step -web
+实际货款,Real money
+坎级-最小值,Sill level - Minimum
+坎级-最大值,Sill level - maximum value
+阿萨法,Asafa
+查询-资产编号,Query - asset number
+新增渠道客户订单,New channel customer order
+费用二级菜单,Cost two menu
+申请记录,Application record
+终端投放申请,Terminal application
+消息-通知公告列表,Message notification bulletin list
+人员KPI设置菜单,Staff KPI settings menu
+通知公告详情,Notice bulletin details
+终端销售业绩统计,Terminal sales performance statistics
+合同有效期,Term of validity of the contract
+转换主岗位,Conversion of the main post
+查询-促销活动,Inquiries - promotion activities
+渠道客户_2,Channel customer _2
+日选择,Day selection
+周选择,Weekly selection
+年选择,Annual selection
+月选择,Month selection
+稽核时间xx,Audit time XX
+终端地址,Terminal address
+已上报,Have been reported
+未上报,Unreported
+整单优惠(元),A single discount (yuan)
+终端订单-购物车,Terminal order shopping cart
+终端订单-详情,Terminal order - details
+终端订单-添加产品,Terminal order - add product
+终端订单-产品列表,Terminal order - Product List
+终端订单-列表,Terminal order list
+终端订单-查看详情,Terminal order - View Details
+终端订单-选择下单人,Terminal order - select single person
+终端订单-选择客户,Terminal order - select customer
+终端订单-编辑,Terminal order - Edit
+终端订单-查看,Terminal order - View
+渠道客户订单-列表,Channel customer order list
+渠道客户订单-编辑,Channel customer orders - Editors
+渠道客户订单-购物车,Channel customer order shopping cart
+渠道客户订单-产品列表,Channel customer order - Product List
+渠道客户订单-添加产品,Channel customer orders - add products
+渠道客户订单-查看,Channel customer order - View
+编辑订单,Edit order
+查看订单,View the order
+新增订单,New order
+渠道客户订单-选择下单人,Channel customer order - select single person
+选择下单人,Choose a single person
+请假日期,Date of leave
+请假明细,Ask for leave
+导入指定终端客户,Importing the specified terminal customer
+日历范围(隐藏),Calendar range (hidden)
+考勤类型,Type of attendance
+系统管理,system management
+终端订单-审核,Terminal order - Audit
+订单审核是否通过？,Is the order review passed?
+厂商直供,Direct supply of manufacturers
+普通订单,Common order
+能否编辑,Can it be edited
+编码,Code
+渠道客户订单-审核,Channel customer order - Audit
+已生效,Have come into force
+计划状态,Planned state
+查询-计划状态,Query plan state
+全部状态,All state
+活动类型,activity type
+拜访数据汇总,Visiting data collection
+终端销售金额,Terminal sales amount
+终端销售数量,Terminal sales volume
+主管_终端销售业绩,Terminal sales performance
+业代_终端销售业绩,Sales performance of the terminal
+业代_终端费用执行,Terminal cost execution
+业代_渠道拜访执行,A visit to the executive channel
+业代_资产状况,Asset status
+主管_终端费用执行,Executive terminal cost execution
+主管_资产状况,Asset status
+完成率,Completion rate
+主管_渠道拜访执行,Executive channel visit
+拜访数,Number of visits
+制定计划,Draw up a plan
+工作管理,Work management
+业绩板,Performance board
+人员KPI统计报表,Personnel KPI statistical report
+组织KPI统计报表,Organization of KPI statistical reports
+系统设置,System setup
+系统,system
+名字,Name
+待审批费用申请列表,Application list for examination and approval
+1-执行时间,1- execution time
+1-穿梭框,1- shuttle box
+引擎线上调试表单1,Debug form 1 on the engine line
+1-选择树控件,1- selection tree control
+1-下拉选择控件,1- drop-down selection control
+1-投资金额,1- investment amount
+1-联级控件,1- couplet control
+2-输入控件,2- input control
+2-联级控件,2- couplet control
+引擎线上调试表单2,Debug form 2 on the engine line
+2-选择树控件,2- selection tree control
+2-下拉选择控件,2- drop-down selection control
+2-执行时间,2- execution time
+我的报告_我收到的_详情,The details I have received from my report
+创建时间-3,Create time -3
+终端名称-3,Terminal name -3
+是否有效地址-3,Is the valid address -3
+营销组织-3,Marketing organization -3
+详细地址-3,Detailed address -3
+引擎测试table - 3,Engine test table - 3
+创建时间-4,Create time -4
+终端名称-4,Terminal name -4
+是否有效地址-4,Is the valid address -4
+营销组织-4,Marketing organization -4
+详细地址-4,Detailed address -4
+引擎测试table - 4,Engine test table - 4
+线内拜访数,Number of visits in line
+计划拜访数,Planned visits
+UIFlyCode今日看板测试,UIFlyCode today's Kanban test
+查看详情,View the details
+收货地址,Receiving address
+审批意见,Examination and approval opinion
+Test Report Table,Test Report Table
+人员KPI批量新增,Personnel KPI added in batch
+投放金额(元)：,Amount of money (yuan):
+组织KPI批量新增,Organization of KPI batch added
+投放金额(元):,Amount of money (yuan):
+单点限额（元）,Single point limit (yuan)
+用于暂存id,For temporary storage of ID
+上报状态：,Report state:
+我的客户,My client
+渠道客户订单-新增,Channel customer orders - New
+门店拜访,Shop visit
+交互式WebView,Interactive WebView
+订单查询,Order query
+全局函数,Global function
+请假时长（h）,Long leave time (H)
+拍照控件测试,Photo control test
+终端订单-新增,Terminal order - New
+投放金额（元）:,Amount of money (yuan):
+实际投放金额（元）,Actual amount of money (yuan)
+目标销售额（元）,Target sales (yuan)
+投放金额（元）,Amount of money (yuan)
+考勤时间段,Time interval
+应用测试,Application test
+重要应用,Important application
+今日-webView,Today -webView
+主管今日看板,Today's Kanban
+看板,Kanban
+刷新,Refresh
+业务员今日,Salesman today
+AI拍照测试,AI photo test
+AI拍照,AI photograph
+订单编辑,Order editing
+主管渠道拜访执行,Executive channel visit
+主管终端销售业绩,Terminal sales performance
+人员考勤,Staff attendance
+拜访详情,Visit details
+渠道拜访执行,Channel visit execution
+集中度,concentration ratio
+清晰度,Definition
+黄金位置,Gold position
+照片背景,Photo background
+饱满度,Fullness
+占有率,Occupancy
+SKU数量,Number of SKU
+实际拜访数,Actual number of visits
+考勤,Check work attendance
+测试表单,test table
+费用管理Copy,Cost management Copy
+布局,layout
+搜索栏,Search bar
+费用计划列表Copy,Cost plan list Copy
+按钮aaa,Button AAA
+按钮aaa111,Button aaa111
+11按钮aaa111,11 button aaa111
+产品价格检查,Product price check
+生动化检查废弃,Vividness examination of abandonment
+AICamera测试,AICamera test
+实际数,Actual number
+定位人员设置,Positioning personnel setting
+监控状态,Monitoring state
+所属营销区域,Affiliated marketing area
+取消监控,Cancellation of monitoring
+监控,Monitor
+定位监控状态,Positioning monitoring state
+查询-岗位,Inquiries - Post
+查询-监控状态,Query monitoring state
+查询-控件标题,Query - control title
+已监控,Monitoring
+已监控,Monitoring
+未监控,Not monitored
+未监控,Not monitored
+AI报表,AI Report
+生动化检测项配置,Vivid detection item configuration
+删除规则,Delete rules
+SKU数量不合格定义,Definition of SKU quantity disqualification
+本品SKU,This product SKU
+最低数量,Minimum quantity
+SKU数量不合格规则,SKU quantity disqualification rule
+SKU数量不合格规则表格列表行定义,SKU number unqualified rule table list line definition
+饱满度不合格定义,Full degree of disqualification definition
+某层最低数量,Minimum number of layers
+SKU数量配置,SKU number configuration
+SKU数量配置表格列表行定义,SKU number configuration table list row definition
+SKU空位配置,SKU space configuration
+某层空位大于此类SKU最小宽度的百分比(%),The percentage of a layer vacancy greater than the minimum width of such SKU (%).
+竞品SKU,Competitive SKU
+本品-竞品关系定义,The definition of this product - competitive product relationship
+照片背景不合格定义,Definition of photo background disqualification
+任意一个本品或竞品SKU的图像占比大于整张照片面积的百分比(%)：,The percentage of images of any product or competing product SKU is larger than that of the whole picture area (%):
+编辑规则,Editorial rules
+执行人名称,Executor name
+SKU数量不合格-规则编辑,SKU quantity disqualification - rule editor
+图片提交序号,Image submission number
+排面结果信息,Surface result information
+sku数量结果信息,SKU quantity result information
+假照,Sham
+清晰度结果信息,Clarity result information
+背景检测结果信息,Background detection result information
+结果照片,Result photo
+占用率结果信息,Occupancy result information
+生动化检查报表,Vivid check report
+排面,Platoon
+饱满度结果信息,Fullness result information
+黄金位置结果信息,Gold position result information
+原始照片,Original photo
+sku数量,Number of SKU
+背景检测,Background detection
+占用率,Occupancy rate
+集中度结果信息,Concentration result information
+照片类型,Photo type
+生动化检查报表生动化检查报表-副本,Vividness check report report - copy - copy
+AICamera测试AICamera测试-副本,AICamera test AICamera test - copy
+AI营业执照识别测试,AI business license identification test
+营业执照,Business license
+AI营业执照识别测试AI营业执照识别测试-副本,AI business license identification test AI business license recognition test - copy
+店头照测试,Store head test
+店头照,Shop photo
+堆头照片,Head photo
+货架照片,Shelf photos
+查询-拜访起止时间,Inquiries - visit time
+冰柜照片,Freezer photo
+查询-业务员,Inquiries - salesman
+查询-照片类型,Query - photo type
+翻拍识别,Remake recognition
+查询-检测结果,Query - detection results
+集中度检测,Centralization detection
+占用率检测,Occupancy detection
+清晰度检测,Sharpness detection
+黄金位置检测,Gold position detection
+照片背景检测,Photo background detection
+饱满度检测,Plumpness detection
+SKU数量检测,SKU quantity detection
+AiCameraSimplify旋转照,AiCameraSimplify rotation
+包含拍照控件的协议,Protocol containing photo controls
+组成形式,Form
+经营范围,Scope of operation
+识别结果,Recognition results
+经营场所,place of business
+经营者,operator
+执照类型,Type of license
+注册号,Registration number
+AI营业执照识别,AI business license identification
+注册日期,Date of registration
+SKU信息,SKU information
+营业执照信息,Business license information
+拜访提交时间,Visit time
+产品名称相似性,Product name similarity
+价签图片,Price tag picture
+产品实际名称,Product real name
+产品检测名称,Product detection name
+产品检测零售价,Product testing retail price
+产品价格一致性,Product price consistency
+产品实际零售价,The actual retail price of the product
+产品价格检查报表,Product price inspection report
+查询-拜访起止日期,Inquiries - call and stop date
+查询-产品价格一致性,Query - product price consistency
+查询-翻拍识别,Query remake recognition
+查询-产品名称相似性,Query - product name similarity
+相似,Be similar
+不同,difference
+一致,Agreement
+检测失败,Detection failure
+产品检测价格(元),Product detection price (yuan)
+产品建议零售价格(元),Product recommended retail price (yuan)
+产品价格标签,Product price tag
+检测名称,Detection name
+店头照报表,Shop head Report
+检测结果,detection result
+查询-日期范围,Query - date range
+终端实际名称,Terminal actual name
+查询-是否有效位置,Query - whether or not the location is valid
+是否有效位置,Is it valid
+查询-code路径编码,Query -code path coding
+AI分析概论,An introduction to AI analysis
+陈列检查-照片分析,Display inspection photo analysis
+aiCameraSimplify营业执照,AiCameraSimplify business license
+AI分析概论报表,AI Analysis Report
+陈列检查-终端分析,Display inspection terminal analysis
+ai照片,AI photo
+其他检测,Other tests
+本品占比,The proportion of this product
+竞品数量,Quantity of competitive goods
+竞品占比,Competition ratio
+检测结果查看,Check result view
+店名识别,Store name recognition
+关联渠道类型,Type of associated channel
+规则名称,Rule name
+生动化检测项-列表查询,Vivid detection item - list query
+规则应用,Rule application
+应用渠道类型,Application channel type
+生动化检查配置规则设置,Vividness check configuration rule setting
+属性,attribute
+占比,Occupation ratio
+生动化检测项规则设置,Rule setting of vividness detection item
+生动化检测规则配置,Rule configuration of vividness detection
+规则类型,Rule type
+生动化检测规则-新增编辑,Vivid detection rules - new editors
+测试轨迹,Test trajectory
+任意一个本品或竞品SKU的图像占比大于整张照片面积的百分比（%）:,The percentage of images of any product or competing product SKU is larger than that of the whole picture area (%):
+测试2,Test 2
+轨迹测试,Trajectory testing
+请输入数字,please enter a number
+任意一个本品或竞品SKU的图像占比大于整张照片面积的百分比(%):,The percentage of images of any product or competing product SKU is larger than that of the whole picture area (%):
+今日测试,Today test
+测试菜单,Test menu
+同意以上协议,Agree to the above agreement
+测试今日,Test today
+生动化检测项-规则应用,Vivid detection term - rule application
+今日首页,Today's home page
+tabbar菜单,Tabbar menu
+报表首页,Report page
+费用管理测试,Cost management test
+删除sss,Delete SSS
+渠道类型999,Channel type 999
+渠道类型9991订单,Channel type 9991 order
+渠道类型911,Channel type 911
+渠道类型91177,Channel type 91177
+应用导航,Application navigation
+渠道类型9订单,Channel type 9 order
+鲜品促销店面工作,Sales promotion shop
+竞品,Competitive product
+营业执照报表,Business license statement
+营业执照照片,Business license photo
+查询-时间范围,Query - time range
+识别名称,Identification name
+查询-识别结果,Query recognition results
+识别失败,Identification failure
+无效照片,Invalid photo
+识别成功,Identification success
+价格识别,Price identification
+价格识别1,Price identification 1
+目标销售数量,Target sales volume
+实际销售数量,Actual sales volume
+价格识别2,Price identification 2
+价格识别test,Price identification test
+折叠列表,Folding list
+其他项检测,Other item detection
+关联ai分析结果id,Correlation AI analysis results ID
+AI业务员职位,AI salesman position
+AICamera列表,AICamera list
+组织形式,Organizational form
+区域营销ID,Regional marketing ID
+检测项结果,Test result
+防假拍检测结果,False beat detection result
+客户冰柜照片,Photo of the client's freezer
+营业执照检测结果,Test result of business license
+店头照识别结果,Store head identification results
+价格识别后的结果id,The result of price identification ID
+翻拍照片状态码,Remake photo status code
+注册号/统一 社会信用代码,Registration number / unified social credit code
+AI生动化检查,AI vividness examination
+统一社会信用代码/注册号,Unified social credit code / registration number
+假拍状态,False beat state
+费用测试,Cost test
+AI分析概览,Overview of AI analysis
+稽查,Inspection
+Ai快拍,Ai snapshot
+数据请求统一ID,Unified ID for data requests
+终端名称s,Terminal name s
+终端名称d,Terminal name D
+AI概览-信息提示,AI Overview - information hints
+统计规则提示：终端下提交的所有陈列照片的以下5个检测项都达标，则此终端为合格终端。,The statistical rules suggest that the following 5 items of inspection items submitted by the terminal are up to standard, and the terminals are qualified terminals.
+1.本品数量：大于0,1. the quantity of this product: more than 0
+2.占有率：每类本品占比大于竞品占比,2. share: the proportion of each class is greater than the competition ratio
+3.照片背景：任意一个本品或竞品SKU的图像占比小于整张照片面积的对应设置占比,3. photo background: any one product or competing product SKU occupies less than the whole picture area.
+4.翻拍识别：真实拍照,4. remake recognition: Real Photo
+5.清晰度：照片清晰,5. definition: clear picture
+终端陈列情况,Terminal display
+统计规则提示：终端下提交的所有陈列照片的以下5个检测项都达标，则此终端为合格终端。,The statistical rules suggest that the following 5 items of inspection items submitted by the terminal are up to standard, and the terminals are qualified terminals.
+1.本品数量：大于0,1. the quantity of this product: more than 0
+2.占有率：每类本品占比大于竞品占比,2. share: the proportion of each class is greater than the competition ratio
+3.照片背景：任意一个本品或竞品SKU的图像占比小于整张照片面积的对应设置占比,3. photo background: any one product or competing product SKU occupies less than the whole picture area.
+4.翻拍识别：真实拍照,4. remake recognition: Real Photo
+5.清晰度：照片清晰,5. definition: clear picture
+AI-终端陈列分析报表,AI- terminal display analysis report
+意图列表,Intent list
+下订单,Order down
+查看下属工作轨迹,View the track of subordinates' work
+查看工作轨迹,Look at the work track
+指定客户下单,Designated customer order
+拜访,visit
+新增计划拜访客户,New plans to visit customers
+查看下属拜访情况,Look at the visits of the subordinates
+渠道拜访详情报表,Channel visit details Report
+终端拜访详情报表,Terminal visit details Report
+负责终端客户总数报表,Report on the total number of end customers
+销量报表,Sales Report
+考勤报表,Attendance report
+查看考勤记录,Check the attendance record
+查看销量业绩,Look at sales performance
+统计规则提示,Statistical rule hints
+统计规则,Statistical rules
+查看今日看板,Look at today's Kanban
+查看考勤报表,Check the attendance report
+查看销售业绩,Look at sales performance
+查看终端客户情况,View the terminal customer situation
+查看终端拜访情况,Look at the terminal visit
+查看渠道拜访情况,Check out channel visits
+拜访客户,Visit customers
+移除计划拜访客户,Remove plans to visit customers
+查看我的拜访计划,Look at my visit plan
+统一 社会信用代码/注册号,Unified social credit code / registration number
+冰柜陈列,Freezer display
+堆头陈列,Head display
+tabbar菜单测试,Tabbar menu test
+今日首页测试,Today's home page test
+报表首页测试,Report home page test
+工作轨迹测试,Work trajectory test
+费用列表,Cost list
+渠道,channel
+下属-终端详情,Subordinates terminal details
+下属拜访情况详情,Details of a visit to a subordinate
+费用-自由布局,Cost free layout
+资产,Assets
+是否重点,Is it important
+测试自由布局,Free test layout
+下拉框,Dropdown box
+复选框,check box
+历史终端名称,History terminal name
+AI生动化检测(test),AI vividness detection (test)
+AI业务员,AI salesman
+数据提交唯一ID,Data submission only ID
+营销组织2,Marketing organization 2
+AI图片,AI picture
+陈列照,Display photos
+生动化检查（AI）,Vividness examination (AI)
+冰柜陈列评分,Freezer display score
+堆头陈列检测,Head display detection
+冰柜陈列检测,Display and detection of freezer
+终端渠道,Terminal channel
+货架陈列检测,Shelf display detection
+提交时系统终端名称,System terminal name at the time of submission
+图片ID,Picture ID
+sku识别详情,SKU identification details
+SKU数量及其他项检测,SKU quantity and other items detection
+照片类型显示值,Photo type display value
+分配客户主页面,Distribution of customer's main page
+分配客户,Assigning customers
+成员列表,Member list
+渠道客户数量,Number of channel customers
+终端客户数量,Terminal customer number
+产品品类1,Product category 1
+更新数据,Update data
+高级设置,advanced setting
+关于我们,About us
+退出,Sign out
+查询-客户类别,Query - customer category
+转移客户,Transfer customers
+客户总数,Total number of customers
+重新定位,Repositioning
+批发渠道,Wholesale channel
+木莲庄酒店-玄讯,Mu Lian Zhuang Hotel - Xuan news
+小玄,Small metaphysics
+暂无数据,No data
+新增客户列表,New customer list
+企业组织架构,Organizational structure of enterprise
+分配,distribution
+断网了,Break the net
+连网了,Networking
+企业动态,Enterprise dynamics
+完成,complete
+搜索,search
+工作提醒,Work reminding
+被转移人员列表,List of people transferred
+查询-人员名称,Query - staff name
+日,day
+生动化检查2（AI）,Vividness check 2 (AI)
+非AI图片,Non AI picture
+SKU数量及其他项检测2,SKU number and other item test 2
+转移客户页面,Transfer customer page
+被转移人员选择,Transferred personnel selection
+从他人转移客户,Transfer customers from others
+被转移人员id,Transferred person Id
+待办列表,To-do list
+刀切,Knife cutting
