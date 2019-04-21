@@ -225,7 +225,7 @@ def stbupdate(stype):
     返回值：null
 '''
 def heima(stockname,sdate):
-
+    pd.set_option('display.max_rows', None)
     df = ts.get_hist_data(stockname, start=sdate)
     df = df.sort_index()
     df.index = pd.to_datetime(df.index, format='%Y-%m-%d')
@@ -238,20 +238,22 @@ def heima(stockname,sdate):
     # 每天的股价变动百分率
     ret = df.p_change / 100
     # 调用talib计算MACD指标
-    df['DIFF'], df['DEA'], df['MACD'] = talib.MACD(np.array(close),fastperiod=12, slowperiod=26, signalperiod=9)
+    # 晕死这个DIFF好像不对，所以还是直接输出其他几个判断条件后，列出来再人肉
+    #df['DIFF'], df['DEA'], df['MACD'] = talib.MACD(np.array(close),fastperiod=12, slowperiod=26, signalperiod=9)
 
+    df['DIFF'], df['DEA'], df['MACD']= talib.MACDEXT(close, fastperiod=12, fastmatype=1, slowperiod=26, slowmatype=1,signalperiod=9, signalmatype=1)
     diff = df.DIFF
     dea = df.DEA
 
-    #晕死这个DIFF好像不对，所以还是直接输出其他几个判断条件后，列出来再人肉
     # 处理信号
     macdSignal = pd.Series(0, index=close.index)
-
-    for i in range(1, len(close)):
+    #为什么这里34开头，因为上面的macd计算的化前面34个都是 NAN 出来
+    for i in range(34, len(close)):
         #if all([[diff[i]>0,ma10[i]>ma10[i-1]],close[i]>open[i],close[i]>ma10[i]]):
-        if all([[ma10[i] > ma10[i - 1]], close[i] > open[i], close[i] > ma10[i]]):
+        if diff[i]>0 and ma10[i] > ma10[i-1] and close[i] > open [i] and close[i] > ma10[i]:
             macdSignal[i] = 1
-        elif all([ma10[i]<= ma10[i-1],close[i] < open[i],close[i] < ma10[i]]):
+        #elif all([ma10[i]<= ma10[i-1],close[i] < open[i],close[i] < ma10[i]]):
+        elif ma10[i] <= ma10[i-1] and close[i] < open [i] and close[i] < ma10[i]:
             macdSignal[i]=-1
 
     macdTrade = macdSignal.shift(1).dropna()
@@ -262,9 +264,9 @@ def heima(stockname,sdate):
     cumStock = np.cumprod(1 + ret[macdRet.index[0]:]) - 1
     # 策略累积收益率
     cumTrade = np.cumprod(1 + macdRet) - 1
-    pd.set_option('display.max_rows', None)
-    print macdSignal
 
+    #print macdSignal
+    return macdSignal
 
 
 '''
@@ -273,7 +275,47 @@ def heima(stockname,sdate):
 
 if __name__ == '__main__':
     print 'stock!'
-    heima('600036','2019-01-01')
+    sig = heima('300033','2016-12-01')
+    #print sig
+    #最简单的处理，定义一个字符串数组，数组中为 一个买入时间，一个卖出时间，计算时候定义一个状态0空仓，1满仓
+    stat =0
+    trade =[]
+    for j in range(0,len(sig)):
+        #print sig.index[j],'+++',sig.values[j]
+        if sig.values[j] ==1 and stat ==0:
+            stat = 1
+            trade.append(sig.index[j])
+        elif sig.values[j] == -1 and  stat ==1:
+            stat = 0
+            trade.append(sig.index[j])
+    #接下来计算每一次买入，卖出的回报，盈亏比例，及总盈亏比
+    print trade
+    df = ts.get_hist_data('300033',start='2016-12-01')
+    c = df.close
+    strbuy = ''
+    vbuy =0
+    strsell = ''
+    vsell =0
+    sigprofit =0
+    totalprofit =0
+    win =0
+    all =0
+    for m in range(0,len(trade)):
+        if m % 2 ==0:
+            strbuy = trade[m].strftime("%Y-%m-%d")
+            vbuy = c[strbuy]
+        elif m % 2 ==1:
+            strsell = trade[m].strftime("%Y-%m-%d")
+            vsell = c[strsell]
+            all = all +1
+            sigprofit = (vsell - vbuy)/vbuy * 100
+            print '买入时间： ',strbuy,'买入价：',vbuy,'卖出时间： ',strsell ,'卖出价：',vsell,' 单笔盈亏： ',sigprofit
+            if sigprofit>0 :
+                win = win +1
+            totalprofit = totalprofit + sigprofit
+
+    print '过交易次数： ',all ,'盈利交易次数： ',win ,'盈利比例： ', win / all * 100
+    print '总盈亏： ', totalprofit
 
 
 
