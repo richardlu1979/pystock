@@ -254,8 +254,52 @@ def heima(stockname,sdate):
 
         elif ma10[i] <= ma10[i-1] and close[i] < open [i] and close[i] < ma10[i]:
             macdSignal[i]=-1
-    print macdSignal[-30:]
+    #print macdSignal[-30:]
     return macdSignal
+
+'''
+    realtimeheima: 
+            得到当前时间之实时股票价格，并加入到均线/macd计算中，得到实时的买卖信号
+    返回值：1 买入，-1 卖出，0 维持
+'''
+def realtimeheima(stockname):
+    pd.set_option('display.max_rows', None)
+    # 使用get_k_data 可以得到前复权
+    df = ts.get_k_data(stockname,start='2018-12-12')
+    df.index = df.date
+    # 收市股价
+    close = df.close
+    dreal = ts.get_realtime_quotes(stockname)
+    mdate = dreal['date'][0]
+    mclose = dreal['price'][0]
+    mopen = dreal['open'][0]
+    newclose = pd.Series({mdate : mclose})
+    all_close = close.append(newclose)
+
+    # MA10价格
+    ma10=  talib.MA(all_close,timeperiod=10)
+
+    # 调用talib计算MACD指标
+    # 晕死这个DIFF好像不对，所以还是直接输出其他几个判断条件后，列出来再人肉
+    #df['DIFF'], df['DEA'], df['MACD'] = talib.MACD(np.array(close),fastperiod=12, slowperiod=26, signalperiod=9)
+
+    diff, dea, macd= talib.MACDEXT(all_close, fastperiod=12, fastmatype=1, slowperiod=26, slowmatype=1,signalperiod=9, signalmatype=1)
+
+    i= len(all_close)
+
+    sign =0
+    print i
+    print diff[i-1]
+    print ma10[i-1]
+
+    #if diff[i]>0 and ma10[i] > ma10[i-1] and mclose> mopen and mclose > ma10[i]:
+        #sign = 1
+    #elif ma10[i] <= ma10[i-1] and mclose < mopen and mclose < ma10[i]:
+        #sign=-1
+
+    return sign
+
+
 
 '''
     recalheima 
@@ -283,8 +327,9 @@ def recalheima(sname,begindata,heimaSignal):
     df = ts.get_k_data(sname, start=begindata)
     df.index = df.date
     df1 = df.shift(-1)
-    # 在这里可以加点好玩的，如果是用发出信号后的第2天的价格入手？
-    #c = df1.close
+
+    # 在这里可以加点好玩的，如果是用发出信号后的第2天的价格入手 open or close？
+    #c = df1.open
     c=df.close
 
 
@@ -305,7 +350,7 @@ def recalheima(sname,begindata,heimaSignal):
             vsell = c[strsell]
             all = all + 1
             sigprofit = (vsell - vbuy) / vbuy * 100
-            #print '买入时间： ', strbuy, '买入价：', vbuy, '卖出时间： ', strsell, '卖出价：', vsell, ' 单笔盈亏： ', sigprofit
+            print '买入时间： ', strbuy, '买入价：', vbuy, '卖出时间： ', strsell, '卖出价：', vsell, ' 单笔盈亏： ', sigprofit
             if sigprofit > 0:
                 win = win + 1
             totalprofit = totalprofit + sigprofit
@@ -322,10 +367,13 @@ def recalheima(sname,begindata,heimaSignal):
 
 if __name__ == '__main__':
     print 'stock!'
-    stocklist =['000859','150252','150201','150153','150197','150206','150131','502050','150195','150270','000858']
-    for k in range(0,len(stocklist)):
-        print '股票代码：' , stocklist[k]
-        sig= heima(stocklist[k],'2016-12-01')
+    kv = realtimeheima('000858')
+    print 'hhhh: ',kv
+    #stocklist =['000859','150252','150201','150153','150197','150206','150131','502050','150195','150270','000858']
+    #stocklist = ['000859', '000858']
+    #for k in range(0,len(stocklist)):
+        #print '股票代码：' , stocklist[k]
+        #sig= heima(stocklist[k],'2016-12-01')
         #recalheima(stocklist[k],'2016-12-01',sig)
 
 
