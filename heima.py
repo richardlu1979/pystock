@@ -1,5 +1,6 @@
 # coding:utf-8
 
+
 '''
     heima: 黑马交易系统
     按照黑马交易系统构建程序化回归程序
@@ -11,13 +12,59 @@
 
 import tushare as ts
 import datetime
-import os
 import time
 import sqlite3
 import talib
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import smtplib,os,sys
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.header import Header
+from email import encoders
+from email.mime.base import MIMEBase
+from email.utils import parseaddr, formataddr
+
+
+
+# 格式化邮件地址
+def formatAddr(s):
+    name, addr = parseaddr(s)
+    return formataddr((Header(name, 'utf-8').encode(), addr))
+
+# 发送邮件
+def sendMail(body):
+    host = 'smtp.163.com'
+    # 设置发件服务器地址
+    port = 994
+    # 设置发件服务器端口号。注意，这里有SSL和非SSL两种形式，现在一般是SSL方式
+    sender = 'cafield2008@163.com'
+    # 设置发件邮箱，一定要自己注册的邮箱
+    pwd = 'keesofT&65@'
+    # 设置发件邮箱的授权码密码，根据163邮箱提示，登录第三方邮件客户端需要授权码
+    receiver = 'cafield2008@163.com'
+    # 设置邮件接收人，可以是QQ邮箱
+    body = '<h1>你已成功打卡</h1><p>zhongfs</p>'
+    # 设置邮件正文，这里是支持HTML的
+    msg = MIMEText(body, 'html')
+    # 设置正文为符合邮件格式的HTML内容
+    msg['subject'] = body
+    # 设置邮件标题
+    msg['from'] = sender
+    # 设置发送人
+    msg['to'] = receiver
+    # 设置接收人
+    try:
+        s = smtplib.SMTP_SSL(host, port)
+        # 注意！如果是使用SSL端口，这里就要改为SMTP_SSL
+        s.login(sender, pwd)
+        # 登陆邮箱
+        s.sendmail(sender, receiver, msg.as_string())
+        # 发送邮件！
+        print ('Done.sent email success')
+    except smtplib.SMTPException:
+        print ('Error.sent email fail')
 
 
 '''
@@ -228,6 +275,7 @@ def heima(stockname,sdate):
     pd.set_option('display.max_rows', None)
     # 使用get_k_data 可以得到前复权
     df = ts.get_k_data(stockname,start=sdate)
+
     df.index = df.date
     # 收市股价
     close = df.close
@@ -254,7 +302,8 @@ def heima(stockname,sdate):
 
         elif ma10[i] <= ma10[i-1] and close[i] < open [i] and close[i] < ma10[i]:
             macdSignal[i]=-1
-    #print macdSignal[-30:]
+    print macdSignal[-130:]
+
     return macdSignal
 
 '''
@@ -263,7 +312,7 @@ def heima(stockname,sdate):
     返回值：1 买入，-1 卖出，0 维持
 '''
 def realtimeheima(stockname):
-    pd.set_option('display.max_rows', None)
+
     # 使用get_k_data 可以得到前复权
     df = ts.get_k_data(stockname,start='2018-12-12')
     df.index = df.date
@@ -271,11 +320,13 @@ def realtimeheima(stockname):
     close = df.close
     dreal = ts.get_realtime_quotes(stockname)
     mdate = dreal['date'][0]
-    mclose = dreal['price'][0]
-    mopen = dreal['open'][0]
+    #这里有坑，dreal出来的price,open这些都是字符串，需要手动转float
+    mclose = float(dreal['price'][0])
+    mopen = float(dreal['open'][0])
     newclose = pd.Series({mdate : mclose})
     all_close = close.append(newclose)
 
+    print all_close
     # MA10价格
     ma10=  talib.MA(all_close,timeperiod=10)
 
@@ -285,17 +336,29 @@ def realtimeheima(stockname):
 
     diff, dea, macd= talib.MACDEXT(all_close, fastperiod=12, fastmatype=1, slowperiod=26, slowmatype=1,signalperiod=9, signalmatype=1)
 
-    i= len(all_close)
+    i= len(all_close)-1
 
-    sign =0
-    print i
-    print diff[i-1]
-    print ma10[i-1]
 
-    #if diff[i]>0 and ma10[i] > ma10[i-1] and mclose> mopen and mclose > ma10[i]:
-        #sign = 1
-    #elif ma10[i] <= ma10[i-1] and mclose < mopen and mclose < ma10[i]:
-        #sign=-1
+
+    manow =0
+    manow = ma10.values[i]
+    maold = 0
+    maold = ma10.values[i-1]
+    diffnow = 0.0
+    diffnow = diff.values[i]
+
+    print 'diff :',diffnow,' ma10 :',manow ,'ma old :',maold
+    print 'real close :',mclose,' real open: ',mopen
+
+
+    sign = 0
+    if diffnow>0 and manow > maold and mclose> mopen and mclose > manow:
+        sign = 1
+
+    if mclose<mopen and manow<=maold and mclose<manow:
+    #if mclose < mopen and manow <= maold and mclose < manow:
+    #elif mclose < mopen :
+        sign=-1
 
     return sign
 
@@ -367,14 +430,17 @@ def recalheima(sname,begindata,heimaSignal):
 
 if __name__ == '__main__':
     print 'stock!'
-    kv = realtimeheima('000858')
-    print 'hhhh: ',kv
-    #stocklist =['000859','150252','150201','150153','150197','150206','150131','502050','150195','150270','000858']
-    #stocklist = ['000859', '000858']
-    #for k in range(0,len(stocklist)):
-        #print '股票代码：' , stocklist[k]
-        #sig= heima(stocklist[k],'2016-12-01')
-        #recalheima(stocklist[k],'2016-12-01',sig)
 
+
+    #kv = realtimeheima('502050')
+    #print 'hhhh: ',kv
+
+
+    #stocklist =['000859','150252','150201','150153','150197','150206','150131','502050','150195','150270','000858']
+    stocklist = ['150195']
+    for k in range(0,len(stocklist)):
+        print '股票代码：' , stocklist[k]
+        sig= heima(stocklist[k],'2016-12-01')
+        recalheima(stocklist[k],'2016-12-01',sig)
 
 
