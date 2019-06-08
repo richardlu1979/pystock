@@ -6,6 +6,7 @@
     按照黑马交易系统构建程序化回归程序
     author:卢超
     使用python2.7
+    2019-06-08：为了兼容windows,将所有print 的内容全部变成E文
 
 '''
 
@@ -20,21 +21,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import smtplib,os,sys
 from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.header import Header
-from email import encoders
-from email.mime.base import MIMEBase
-from email.utils import parseaddr, formataddr
 
-
-
-# 格式化邮件地址
-def formatAddr(s):
-    name, addr = parseaddr(s)
-    return formataddr((Header(name, 'utf-8').encode(), addr))
 
 # 发送邮件
-def sendMail(body):
+def sendMail(title,body):
     host = 'smtp.163.com'
     # 设置发件服务器地址
     port = 994
@@ -45,11 +35,11 @@ def sendMail(body):
     # 设置发件邮箱的授权码密码，根据163邮箱提示，登录第三方邮件客户端需要授权码
     receiver = 'cafield2008@163.com'
     # 设置邮件接收人，可以是QQ邮箱
-    body = '<h1>你已成功打卡</h1><p>zhongfs</p>'
+    #body = '<h1>hhaha!</h1><p>zhongfs</p>'
     # 设置邮件正文，这里是支持HTML的
     msg = MIMEText(body, 'html')
     # 设置正文为符合邮件格式的HTML内容
-    msg['subject'] = body
+    msg['subject'] = title
     # 设置邮件标题
     msg['from'] = sender
     # 设置发送人
@@ -191,12 +181,12 @@ def simplemacd():
 
 
 '''
-    stbinsert: 打开指定股票列表文件sfile, 将股票编号，和买入时间点插入
+    stdb: 对数据库的开发的验证
     返回值： 0正常，1异常
 '''
 
 
-def stbinsert(sfile):
+def stdb(sfile):
     try:
         print 'insert'
         data = open(sfile)
@@ -232,36 +222,6 @@ def stbinsert(sfile):
         print 'error'
         pass
 
-
-'''
-    stbupdate: 查出所有buyprice,twop,threep,fivep,tenp为空的记录，进行相应的update动作
-               stype : 1 更新 buyprice,3 更新threep,2更新 twop,5 更新fivep,10更新 tenp
-    返回值： 0正常，1异常
-'''
-
-
-def stbupdate(stype):
-    try:
-        conn = sqlite3.connect('test.db')
-        print("Open database successfully")
-        c = conn.cursor()
-        c.execute('SELECT * FROM tbstock WHERE buyprice IS NULL ')
-        vs = c.fetchall()
-        for row in vs:
-            buytime = row[2]
-            scode = row[1]
-            tmphn = ts.get_k_data(scode.strip(), start=buytime.strip())
-            nsize = tmphn.iloc[:, 0].size
-            if nsize > 0:
-                buyprice = tmphn.iloc[1].values[1]
-                c.execute("UPDATE  tbstock SET buyprice= ? WHERE scode =? ", (buyprice, scode))
-
-        c.close()
-        conn.commit()
-        conn.close()
-    except:
-        print 'error'
-        pass
 
 
 
@@ -314,19 +274,26 @@ def heima(stockname,sdate):
 def realtimeheima(stockname):
 
     # 使用get_k_data 可以得到前复权
-    df = ts.get_k_data(stockname,start='2018-12-12')
+    df = ts.get_k_data(stockname,start='2016-12-12')
     df.index = df.date
     # 收市股价
     close = df.close
     dreal = ts.get_realtime_quotes(stockname)
     mdate = dreal['date'][0]
-    #这里有坑，dreal出来的price,open这些都是字符串，需要手动转float
-    mclose = float(dreal['price'][0])
-    mopen = float(dreal['open'][0])
-    newclose = pd.Series({mdate : mclose})
-    all_close = close.append(newclose)
 
-    print all_close
+    #这里要判断下实时获得的日期，是否已经K-data中见已经存在，如果存在则说明不需要将realtime中的结果加入分析，不存在则加入全部close中分析
+    if (mdate == df.tail(1)['date'].values[0]) :
+        mclose = float(dreal['price'][0])
+        mopen = float(dreal['open'][0])
+        all_close = close
+    else :
+        #这里有坑，dreal出来的price,open这些都是字符串，需要手动转float
+        mclose = float(dreal['price'][0])
+        mopen = float(dreal['open'][0])
+        newclose = pd.Series({mdate : mclose})
+        all_close = close.append(newclose)
+
+    # print all_close
     # MA10价格
     ma10=  talib.MA(all_close,timeperiod=10)
 
@@ -340,6 +307,8 @@ def realtimeheima(stockname):
 
 
 
+
+
     manow =0
     manow = ma10.values[i]
     maold = 0
@@ -347,8 +316,8 @@ def realtimeheima(stockname):
     diffnow = 0.0
     diffnow = diff.values[i]
 
-    print 'diff :',diffnow,' ma10 :',manow ,'ma old :',maold
-    print 'real close :',mclose,' real open: ',mopen
+    print 'diff :',diffnow,' ma10 :',manow ,'ma old :',maold,' real close :',mclose,' real open: ',mopen
+
 
 
     sign = 0
@@ -360,6 +329,7 @@ def realtimeheima(stockname):
     #elif mclose < mopen :
         sign=-1
 
+    print sign
     return sign
 
 
@@ -413,13 +383,59 @@ def recalheima(sname,begindata,heimaSignal):
             vsell = c[strsell]
             all = all + 1
             sigprofit = (vsell - vbuy) / vbuy * 100
-            print '买入时间： ', strbuy, '买入价：', vbuy, '卖出时间： ', strsell, '卖出价：', vsell, ' 单笔盈亏： ', sigprofit
+            print 'buy time： ', strbuy, 'buy price：', vbuy, 'sell time： ', strsell, 'sell price：', vsell, ' profit： ', sigprofit
             if sigprofit > 0:
                 win = win + 1
             totalprofit = totalprofit + sigprofit
 
-    print '过交易次数： ', all, '盈利交易次数： ', win, '盈利比例： ', win / all * 100
-    print '总盈亏： ', totalprofit
+    print 'all times： ', all, 'win times： ', win, ' possible： ', win / all * 100
+    print 'total profit： ', totalprofit
+
+
+'''
+    watchheima:  每天对stocks列表中的股票每天进行实时监控，在下午2：45的时候发邮件到手机上
+    simple: 测试tushare
+    返回值：null
+'''
+
+def watchheima(stocks):
+
+    stock_signs = ''
+
+    for m in range(0,len(stocks)):
+        kresult = realtimeheima(stocks[m])
+        stock_signs = stock_signs + ' stock : ' + stocks[m] + '  sign : ' + str(kresult) +'\n'
+
+    print(stock_signs)
+
+    #保证只发一次
+    nmail = 0
+    #设定 发送时间
+    btime = '14:48:00'
+    etime= '14:53:00'
+
+
+    while 1==1 :
+
+        ntime = time.strftime('%H:%M:%S')
+
+        print ntime
+
+        if ntime > btime and ntime <= etime and nmail ==0 :
+            nmail = 1
+            #发邮件
+            print 'hhhh!'
+            for m in range(0, len(stocks)):
+                kresult = realtimeheima(stocks[m])
+                stock_signs = stock_signs + ' stock : ' + stocks[m] + '  sign : ' + str(kresult) + '\n'
+
+            print(stock_signs)
+
+            sendMail('stock reoport',stock_signs)
+            return 0
+        else :
+
+            time.sleep(120) #2分钟
 
 
 
@@ -431,16 +447,21 @@ def recalheima(sname,begindata,heimaSignal):
 if __name__ == '__main__':
     print 'stock!'
 
+    stocklist =['150153','150197','150206','150131','502050','150195','150270','150172']
+    #stocklist = ['600872']
 
     #kv = realtimeheima('502050')
     #print 'hhhh: ',kv
 
 
-    #stocklist =['000859','150252','150201','150153','150197','150206','150131','502050','150195','150270','000858']
-    stocklist = ['150195']
+
     for k in range(0,len(stocklist)):
-        print '股票代码：' , stocklist[k]
+        print 'stock code：' , stocklist[k]
+        #realtimeheima(stocklist[k])
         sig= heima(stocklist[k],'2016-12-01')
         recalheima(stocklist[k],'2016-12-01',sig)
 
+    #sendMail('hahahaha!')
 
+
+    #watchheima(stocklist)
