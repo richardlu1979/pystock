@@ -383,13 +383,13 @@ def recalheima(sname,begindata,heimaSignal):
             vsell = c[strsell]
             all = all + 1
             sigprofit = (vsell - vbuy) / vbuy * 100
-            print 'buy time： ', strbuy, 'buy price：', vbuy, 'sell time： ', strsell, 'sell price：', vsell, ' profit： ', sigprofit
+            print 'buy time: ', strbuy, 'buy price: ', vbuy, 'sell time: ', strsell, 'sell price: ', vsell, ' profit: ', sigprofit
             if sigprofit > 0:
                 win = win + 1
             totalprofit = totalprofit + sigprofit
 
-    print 'all times： ', all, 'win times： ', win, ' possible： ', win / all * 100
-    print 'total profit： ', totalprofit
+    print 'all times: ', all, 'win times: ', win, ' possible: ', win / all * 100
+    print 'total profit: ', totalprofit
 
 
 '''
@@ -404,7 +404,7 @@ def watchheima(stocks):
 
     for m in range(0,len(stocks)):
         kresult = realtimeheima(stocks[m])
-        stock_signs = stock_signs + ' stock : ' + stocks[m] + '  sign : ' + str(kresult) +'\n'
+        stock_signs = stock_signs + ' stock: ' + stocks[m] + '  sign: ' + str(kresult) +'\n'
 
     print(stock_signs)
 
@@ -427,7 +427,7 @@ def watchheima(stocks):
             print 'hhhh!'
             for m in range(0, len(stocks)):
                 kresult = realtimeheima(stocks[m])
-                stock_signs = stock_signs + ' stock : ' + stocks[m] + '  sign : ' + str(kresult) + '\n'
+                stock_signs = stock_signs + ' stock: ' + stocks[m] + '  sign: ' + str(kresult) + '\n'
 
             print(stock_signs)
 
@@ -456,7 +456,7 @@ if __name__ == '__main__':
 
 
     for k in range(0,len(stocklist)):
-        print 'stock code：' , stocklist[k]
+        print 'stock code: ' , stocklist[k]
         #realtimeheima(stocklist[k])
         sig= heima(stocklist[k],'2016-12-01')
         recalheima(stocklist[k],'2016-12-01',sig)
