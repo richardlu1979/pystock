@@ -222,6 +222,45 @@ def stdb(sfile):
         print 'error'
         pass
 
+'''
+    longdiff: 
+           买入条件： 1）dif>0,明显向上突破O轴 2）Macd>0 3)Macd发散 4）收阳线
+           卖出条件： 1)dif<0   or 低于买入价8%
+    返回值：null
+'''
+def longdiff(stockname,sdate):
+    pd.set_option('display.max_rows', None)
+    # 使用get_k_data 可以得到前复权
+    df = ts.get_k_data(stockname,start=sdate)
+
+    df.index = df.date
+    # 收市股价
+    close = df.close
+    # 开盘股价
+    open = df.open
+    
+    # 调用talib计算MACD指标
+    # 晕死这个DIFF好像不对，所以还是直接输出其他几个判断条件后，列出来再人肉
+    #df['DIFF'], df['DEA'], df['MACD'] = talib.MACD(np.array(close),fastperiod=12, slowperiod=26, signalperiod=9)
+
+    df['DIFF'], df['DEA'], df['MACD']= talib.MACDEXT(close, fastperiod=12, fastmatype=1, slowperiod=26, slowmatype=1,signalperiod=9, signalmatype=1)
+    diff = df.DIFF
+    dea = df.DEA
+    macd = df.MACD
+
+    # 处理信号
+    macdSignal = pd.Series(0, index=close.index)
+    #为什么这里34开头，因为上面的macd计算的化前面34个都是 NAN 出来
+    for i in range(34, len(close)):
+
+        if diff[i]>0 and macd[i] > macd[i-1] and close[i] > open [i] and macd[i] > 0 and macd[i-1] >0 :
+            macdSignal[i] = 1
+
+        elif diff[i] < 0:
+            macdSignal[i]=-1
+    print macdSignal[-20:]
+
+    return macdSignal
 
 
 
@@ -458,7 +497,8 @@ if __name__ == '__main__':
     for k in range(0,len(stocklist)):
         print 'stock code: ' , stocklist[k]
         #realtimeheima(stocklist[k])
-        sig= heima(stocklist[k],'2016-12-01')
+        #sig= heima(stocklist[k],'2016-12-01')
+        sig= longdiff(stocklist[k],'2016-12-01')
         recalheima(stocklist[k],'2016-12-01',sig)
 
     #sendMail('hahahaha!')
