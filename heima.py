@@ -486,8 +486,8 @@ def watchheima(stocks):
 if __name__ == '__main__':
     print 'stock!'
 
-    stocklist =['150153','150197','150206','150131','502050','150195','150270','150172']
-    #stocklist = ['600872']
+    #stocklist =['150153','150197','150206','150131','502050','150195','150270','150172']
+    stocklist = ['603156']
 
     #kv = realtimeheima('502050')
     #print 'hhhh: ',kv
