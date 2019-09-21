@@ -487,7 +487,8 @@ if __name__ == '__main__':
     print 'stock!'
 
     #stocklist =['150153','150197','150206','150131','502050','150195','150270','150172']
-    stocklist = ['603156']
+    #stocklist =['510050','159915','512880','512500','512010','513050','512400','512680','510630','510410','512200']
+    stocklist = ['150195']
 
     #kv = realtimeheima('502050')
     #print 'hhhh: ',kv
@@ -497,8 +498,8 @@ if __name__ == '__main__':
     for k in range(0,len(stocklist)):
         print 'stock code: ' , stocklist[k]
         #realtimeheima(stocklist[k])
-        #sig= heima(stocklist[k],'2016-12-01')
-        sig= longdiff(stocklist[k],'2016-12-01')
+        sig= heima(stocklist[k],'2016-12-01')
+        #sig= longdiff(stocklist[k],'2016-12-01')
         recalheima(stocklist[k],'2016-12-01',sig)
 
     #sendMail('hahahaha!')
