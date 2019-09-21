@@ -5,9 +5,9 @@
     heima: 黑马交易系统
     按照黑马交易系统构建程序化回归程序
     author:卢超
-    使用python2.7
-    2019-06-08：为了兼容windows,将所有print 的内容全部变成E文
-
+    使用python3
+    
+    
 '''
 
 
@@ -188,10 +188,10 @@ def simplemacd():
 
 def stdb(sfile):
     try:
-        print 'insert'
+        
         data = open(sfile)
         conn = sqlite3.connect('test.db')
-        print "Open database successfully"
+  
         c = conn.cursor()
         ncount = 0
         hs = ts.get_stock_basics()
@@ -211,15 +211,15 @@ def stdb(sfile):
                     "INSERT INTO tbstock (sname,begintime,scode,beginprice,buyprice,twop,threep,fivep,tenp) VALUES (?,?,?,?,?,?,?,?,?)",
                     (sname, buytime.strip(), stockname.strip(), beginprice, buyprice, twop, threep, fivep, tenp))
             else:
-                print stockname, buytime, 'no 3 days'
-            print ncount
+                print (stockname, buytime, 'no 3 days')
+            print (ncount)
             ncount = ncount + 1
         conn.commit()
         conn.close()
 
 
     except:
-        print 'error'
+        print ('error')
         pass
 
 '''
@@ -258,7 +258,7 @@ def longdiff(stockname,sdate):
 
         elif diff[i] < 0:
             macdSignal[i]=-1
-    print macdSignal[-20:]
+    print (macdSignal[-20:])
 
     return macdSignal
 
@@ -301,7 +301,7 @@ def heima(stockname,sdate):
 
         elif ma10[i] <= ma10[i-1] and close[i] < open [i] and close[i] < ma10[i]:
             macdSignal[i]=-1
-    print macdSignal[-130:]
+    print (macdSignal[-130:])
 
     return macdSignal
 
@@ -355,7 +355,7 @@ def realtimeheima(stockname):
     diffnow = 0.0
     diffnow = diff.values[i]
 
-    print 'diff :',diffnow,' ma10 :',manow ,'ma old :',maold,' real close :',mclose,' real open: ',mopen
+    print ('diff :',diffnow,' ma10 :',manow ,'ma old :',maold,' real close :',mclose,' real open: ',mopen)
 
 
 
@@ -368,7 +368,7 @@ def realtimeheima(stockname):
     #elif mclose < mopen :
         sign=-1
 
-    print sign
+    print (sign)
     return sign
 
 
@@ -422,13 +422,13 @@ def recalheima(sname,begindata,heimaSignal):
             vsell = c[strsell]
             all = all + 1
             sigprofit = (vsell - vbuy) / vbuy * 100
-            print 'buy time: ', strbuy, 'buy price: ', vbuy, 'sell time: ', strsell, 'sell price: ', vsell, ' profit: ', sigprofit
+            print ('buy time: ', strbuy, 'buy price: ', vbuy, 'sell time: ', strsell, 'sell price: ', vsell, ' profit: ', sigprofit)
             if sigprofit > 0:
                 win = win + 1
             totalprofit = totalprofit + sigprofit
 
-    print 'all times: ', all, 'win times: ', win, ' possible: ', win / all * 100
-    print 'total profit: ', totalprofit
+    print ('all times: ', all, 'win times: ', win, ' possible: ', win / all * 100)
+    print ('total profit: ', totalprofit)
 
 
 '''
@@ -458,12 +458,12 @@ def watchheima(stocks):
 
         ntime = time.strftime('%H:%M:%S')
 
-        print ntime
+        print (ntime)
 
         if ntime > btime and ntime <= etime and nmail ==0 :
             nmail = 1
             #发邮件
-            print 'hhhh!'
+            print ('hhhh!')
             for m in range(0, len(stocks)):
                 kresult = realtimeheima(stocks[m])
                 stock_signs = stock_signs + ' stock: ' + stocks[m] + '  sign: ' + str(kresult) + '\n'
@@ -484,7 +484,7 @@ def watchheima(stocks):
 '''
 
 if __name__ == '__main__':
-    print 'stock!'
+    print ('stock!')
 
     #stocklist =['150153','150197','150206','150131','502050','150195','150270','150172']
     #stocklist =['510050','159915','512880','512500','512010','513050','512400','512680','510630','510410','512200']
@@ -496,7 +496,7 @@ if __name__ == '__main__':
 
 
     for k in range(0,len(stocklist)):
-        print 'stock code: ' , stocklist[k]
+        print ('stock code: ' , stocklist[k])
         #realtimeheima(stocklist[k])
         sig= heima(stocklist[k],'2016-12-01')
         #sig= longdiff(stocklist[k],'2016-12-01')
